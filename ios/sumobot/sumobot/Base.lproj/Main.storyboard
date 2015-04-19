@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sumobot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="width" constant="131" id="zDC-EE-2QT"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="zxn-4v-14v" appends="YES" id="fe5-Ps-sQF"/>
+                                    <outletCollection property="gestureRecognizers" destination="zxn-4v-14v" appends="YES" id="vNy-sx-mkZ"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slider" translatesAutoresizingMaskIntoConstraints="NO" id="1Sw-kM-3bQ" userLabel="rightSlider">
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="width" constant="131" id="qxY-ck-1GW"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="B2x-xx-KH7" appends="YES" id="5fr-OO-3FF"/>
+                                    <outletCollection property="gestureRecognizers" destination="B2x-xx-KH7" appends="YES" id="pUu-ih-MaD"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h93-Ds-GPB" userLabel="button">
@@ -90,19 +90,21 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="leftTrack" destination="Lsu-T7-hYY" id="jto-E0-hRe"/>
+                        <outlet property="leftThumb" destination="t6b-Cc-XJT" id="ALA-fF-3gu"/>
+                        <outlet property="leftTrack" destination="Lsu-T7-hYY" id="S4a-Wd-HiP"/>
+                        <outlet property="rightThumb" destination="1Sw-kM-3bQ" id="JTy-vx-jBY"/>
                         <outlet property="rightTrack" destination="k1O-x9-Bwj" id="pP7-JH-L2E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="zxn-4v-14v" userLabel="leftGestureRecognizer">
                     <connections>
-                        <action selector="onLeftThumbDragged:" destination="BYZ-38-t0r" id="T7Z-UB-6gH"/>
+                        <action selector="onLeftThumbDragged:" destination="BYZ-38-t0r" id="kcQ-dN-QHH"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="B2x-xx-KH7" userLabel="rightGestureRecognizer">
                     <connections>
-                        <action selector="onRightThumbDragged:" destination="BYZ-38-t0r" id="uWo-K0-P4h"/>
+                        <action selector="onRightThumbDragged:" destination="BYZ-38-t0r" id="Uoz-om-wUc"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>

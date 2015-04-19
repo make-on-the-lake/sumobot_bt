@@ -7,46 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CEF54941AC8F792005906D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEF54931AC8F792005906D1 /* AppDelegate.swift */; };
-		8CEF54961AC8F792005906D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEF54951AC8F792005906D1 /* ViewController.swift */; };
-		8CEF54991AC8F792005906D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEF54971AC8F792005906D1 /* Main.storyboard */; };
-		8CEF549B1AC8F792005906D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEF549A1AC8F792005906D1 /* Images.xcassets */; };
-		8CEF549E1AC8F792005906D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CEF549C1AC8F792005906D1 /* LaunchScreen.xib */; };
-		8CEF54AA1AC8F792005906D1 /* sumobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEF54A91AC8F792005906D1 /* sumobotTests.swift */; };
+		426B2465B94DD7DBE36B9213 /* BTLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B240AF71365374AE070C2 /* BTLEService.m */; };
+		8CD69C461AE348C500D6EDB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD69C451AE348C500D6EDB7 /* main.m */; };
+		8CD69C491AE348C500D6EDB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD69C481AE348C500D6EDB7 /* AppDelegate.m */; };
+		8CD69C4C1AE348C500D6EDB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD69C4B1AE348C500D6EDB7 /* ViewController.m */; };
+		8CD69C4F1AE348C500D6EDB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD69C4D1AE348C500D6EDB7 /* Main.storyboard */; };
+		8CD69C511AE348C500D6EDB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD69C501AE348C500D6EDB7 /* Images.xcassets */; };
+		8CD69C541AE348C500D6EDB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD69C521AE348C500D6EDB7 /* LaunchScreen.xib */; };
+		8CD69C601AE348C500D6EDB7 /* sumobotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD69C5F1AE348C500D6EDB7 /* sumobotTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8CEF54A41AC8F792005906D1 /* PBXContainerItemProxy */ = {
+		8CD69C5A1AE348C500D6EDB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8CEF54861AC8F792005906D1 /* Project object */;
+			containerPortal = 8CD69C381AE348C500D6EDB7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8CEF548D1AC8F792005906D1;
+			remoteGlobalIDString = 8CD69C3F1AE348C500D6EDB7;
 			remoteInfo = sumobot;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8CEF548E1AC8F792005906D1 /* sumobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sumobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CEF54921AC8F792005906D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CEF54931AC8F792005906D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CEF54951AC8F792005906D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CEF54981AC8F792005906D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8CEF549A1AC8F792005906D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8CEF549D1AC8F792005906D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8CEF54A31AC8F792005906D1 /* sumobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sumobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CEF54A81AC8F792005906D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CEF54A91AC8F792005906D1 /* sumobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sumobotTests.swift; sourceTree = "<group>"; };
+		426B240AF71365374AE070C2 /* BTLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEService.m; sourceTree = "<group>"; };
+		426B293439C068C743BE1A68 /* BTLEServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEServiceDelegate.h; sourceTree = "<group>"; };
+		426B2AFD34D99E171ADCF155 /* BTLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEService.h; sourceTree = "<group>"; };
+		8CD69C401AE348C500D6EDB7 /* sumobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sumobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD69C441AE348C500D6EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD69C451AE348C500D6EDB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CD69C471AE348C500D6EDB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CD69C481AE348C500D6EDB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CD69C4A1AE348C500D6EDB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8CD69C4B1AE348C500D6EDB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8CD69C4E1AE348C500D6EDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CD69C501AE348C500D6EDB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CD69C531AE348C500D6EDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8CD69C591AE348C500D6EDB7 /* sumobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sumobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD69C5E1AE348C500D6EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD69C5F1AE348C500D6EDB7 /* sumobotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sumobotTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8CEF548B1AC8F792005906D1 /* Frameworks */ = {
+		8CD69C3D1AE348C500D6EDB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CEF54A01AC8F792005906D1 /* Frameworks */ = {
+		8CD69C561AE348C500D6EDB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,58 +64,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8CEF54851AC8F792005906D1 = {
+		8CD69C371AE348C500D6EDB7 = {
 			isa = PBXGroup;
 			children = (
-				8CEF54901AC8F792005906D1 /* sumobot */,
-				8CEF54A61AC8F792005906D1 /* sumobotTests */,
-				8CEF548F1AC8F792005906D1 /* Products */,
+				8CD69C421AE348C500D6EDB7 /* sumobot */,
+				8CD69C5C1AE348C500D6EDB7 /* sumobotTests */,
+				8CD69C411AE348C500D6EDB7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8CEF548F1AC8F792005906D1 /* Products */ = {
+		8CD69C411AE348C500D6EDB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CEF548E1AC8F792005906D1 /* sumobot.app */,
-				8CEF54A31AC8F792005906D1 /* sumobotTests.xctest */,
+				8CD69C401AE348C500D6EDB7 /* sumobot.app */,
+				8CD69C591AE348C500D6EDB7 /* sumobotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8CEF54901AC8F792005906D1 /* sumobot */ = {
+		8CD69C421AE348C500D6EDB7 /* sumobot */ = {
 			isa = PBXGroup;
 			children = (
-				8CEF54931AC8F792005906D1 /* AppDelegate.swift */,
-				8CEF54951AC8F792005906D1 /* ViewController.swift */,
-				8CEF54971AC8F792005906D1 /* Main.storyboard */,
-				8CEF549A1AC8F792005906D1 /* Images.xcassets */,
-				8CEF549C1AC8F792005906D1 /* LaunchScreen.xib */,
-				8CEF54911AC8F792005906D1 /* Supporting Files */,
+				8CD69C471AE348C500D6EDB7 /* AppDelegate.h */,
+				8CD69C481AE348C500D6EDB7 /* AppDelegate.m */,
+				8CD69C4A1AE348C500D6EDB7 /* ViewController.h */,
+				8CD69C4B1AE348C500D6EDB7 /* ViewController.m */,
+				8CD69C4D1AE348C500D6EDB7 /* Main.storyboard */,
+				8CD69C501AE348C500D6EDB7 /* Images.xcassets */,
+				8CD69C521AE348C500D6EDB7 /* LaunchScreen.xib */,
+				8CD69C431AE348C500D6EDB7 /* Supporting Files */,
+				426B240AF71365374AE070C2 /* BTLEService.m */,
+				426B2AFD34D99E171ADCF155 /* BTLEService.h */,
+				426B293439C068C743BE1A68 /* BTLEServiceDelegate.h */,
 			);
 			path = sumobot;
 			sourceTree = "<group>";
 		};
-		8CEF54911AC8F792005906D1 /* Supporting Files */ = {
+		8CD69C431AE348C500D6EDB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8CEF54921AC8F792005906D1 /* Info.plist */,
+				8CD69C441AE348C500D6EDB7 /* Info.plist */,
+				8CD69C451AE348C500D6EDB7 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8CEF54A61AC8F792005906D1 /* sumobotTests */ = {
+		8CD69C5C1AE348C500D6EDB7 /* sumobotTests */ = {
 			isa = PBXGroup;
 			children = (
-				8CEF54A91AC8F792005906D1 /* sumobotTests.swift */,
-				8CEF54A71AC8F792005906D1 /* Supporting Files */,
+				8CD69C5F1AE348C500D6EDB7 /* sumobotTests.m */,
+				8CD69C5D1AE348C500D6EDB7 /* Supporting Files */,
 			);
 			path = sumobotTests;
 			sourceTree = "<group>";
 		};
-		8CEF54A71AC8F792005906D1 /* Supporting Files */ = {
+		8CD69C5D1AE348C500D6EDB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8CEF54A81AC8F792005906D1 /* Info.plist */,
+				8CD69C5E1AE348C500D6EDB7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,13 +129,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8CEF548D1AC8F792005906D1 /* sumobot */ = {
+		8CD69C3F1AE348C500D6EDB7 /* sumobot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CEF54AD1AC8F792005906D1 /* Build configuration list for PBXNativeTarget "sumobot" */;
+			buildConfigurationList = 8CD69C631AE348C500D6EDB7 /* Build configuration list for PBXNativeTarget "sumobot" */;
 			buildPhases = (
-				8CEF548A1AC8F792005906D1 /* Sources */,
-				8CEF548B1AC8F792005906D1 /* Frameworks */,
-				8CEF548C1AC8F792005906D1 /* Resources */,
+				8CD69C3C1AE348C500D6EDB7 /* Sources */,
+				8CD69C3D1AE348C500D6EDB7 /* Frameworks */,
+				8CD69C3E1AE348C500D6EDB7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,46 +143,46 @@
 			);
 			name = sumobot;
 			productName = sumobot;
-			productReference = 8CEF548E1AC8F792005906D1 /* sumobot.app */;
+			productReference = 8CD69C401AE348C500D6EDB7 /* sumobot.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8CEF54A21AC8F792005906D1 /* sumobotTests */ = {
+		8CD69C581AE348C500D6EDB7 /* sumobotTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CEF54B01AC8F792005906D1 /* Build configuration list for PBXNativeTarget "sumobotTests" */;
+			buildConfigurationList = 8CD69C661AE348C500D6EDB7 /* Build configuration list for PBXNativeTarget "sumobotTests" */;
 			buildPhases = (
-				8CEF549F1AC8F792005906D1 /* Sources */,
-				8CEF54A01AC8F792005906D1 /* Frameworks */,
-				8CEF54A11AC8F792005906D1 /* Resources */,
+				8CD69C551AE348C500D6EDB7 /* Sources */,
+				8CD69C561AE348C500D6EDB7 /* Frameworks */,
+				8CD69C571AE348C500D6EDB7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8CEF54A51AC8F792005906D1 /* PBXTargetDependency */,
+				8CD69C5B1AE348C500D6EDB7 /* PBXTargetDependency */,
 			);
 			name = sumobotTests;
 			productName = sumobotTests;
-			productReference = 8CEF54A31AC8F792005906D1 /* sumobotTests.xctest */;
+			productReference = 8CD69C591AE348C500D6EDB7 /* sumobotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8CEF54861AC8F792005906D1 /* Project object */ = {
+		8CD69C381AE348C500D6EDB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = SparkBarn;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Make on the Lake";
 				TargetAttributes = {
-					8CEF548D1AC8F792005906D1 = {
-						CreatedOnToolsVersion = 6.2;
+					8CD69C3F1AE348C500D6EDB7 = {
+						CreatedOnToolsVersion = 6.3;
 					};
-					8CEF54A21AC8F792005906D1 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 8CEF548D1AC8F792005906D1;
+					8CD69C581AE348C500D6EDB7 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 8CD69C3F1AE348C500D6EDB7;
 					};
 				};
 			};
-			buildConfigurationList = 8CEF54891AC8F792005906D1 /* Build configuration list for PBXProject "sumobot" */;
+			buildConfigurationList = 8CD69C3B1AE348C500D6EDB7 /* Build configuration list for PBXProject "sumobot" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +190,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 8CEF54851AC8F792005906D1;
-			productRefGroup = 8CEF548F1AC8F792005906D1 /* Products */;
+			mainGroup = 8CD69C371AE348C500D6EDB7;
+			productRefGroup = 8CD69C411AE348C500D6EDB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CEF548D1AC8F792005906D1 /* sumobot */,
-				8CEF54A21AC8F792005906D1 /* sumobotTests */,
+				8CD69C3F1AE348C500D6EDB7 /* sumobot */,
+				8CD69C581AE348C500D6EDB7 /* sumobotTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8CEF548C1AC8F792005906D1 /* Resources */ = {
+		8CD69C3E1AE348C500D6EDB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CEF54991AC8F792005906D1 /* Main.storyboard in Resources */,
-				8CEF549E1AC8F792005906D1 /* LaunchScreen.xib in Resources */,
-				8CEF549B1AC8F792005906D1 /* Images.xcassets in Resources */,
+				8CD69C4F1AE348C500D6EDB7 /* Main.storyboard in Resources */,
+				8CD69C541AE348C500D6EDB7 /* LaunchScreen.xib in Resources */,
+				8CD69C511AE348C500D6EDB7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CEF54A11AC8F792005906D1 /* Resources */ = {
+		8CD69C571AE348C500D6EDB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,46 +222,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8CEF548A1AC8F792005906D1 /* Sources */ = {
+		8CD69C3C1AE348C500D6EDB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CEF54961AC8F792005906D1 /* ViewController.swift in Sources */,
-				8CEF54941AC8F792005906D1 /* AppDelegate.swift in Sources */,
+				8CD69C4C1AE348C500D6EDB7 /* ViewController.m in Sources */,
+				8CD69C491AE348C500D6EDB7 /* AppDelegate.m in Sources */,
+				8CD69C461AE348C500D6EDB7 /* main.m in Sources */,
+				426B2465B94DD7DBE36B9213 /* BTLEService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CEF549F1AC8F792005906D1 /* Sources */ = {
+		8CD69C551AE348C500D6EDB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CEF54AA1AC8F792005906D1 /* sumobotTests.swift in Sources */,
+				8CD69C601AE348C500D6EDB7 /* sumobotTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8CEF54A51AC8F792005906D1 /* PBXTargetDependency */ = {
+		8CD69C5B1AE348C500D6EDB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CEF548D1AC8F792005906D1 /* sumobot */;
-			targetProxy = 8CEF54A41AC8F792005906D1 /* PBXContainerItemProxy */;
+			target = 8CD69C3F1AE348C500D6EDB7 /* sumobot */;
+			targetProxy = 8CD69C5A1AE348C500D6EDB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CEF54971AC8F792005906D1 /* Main.storyboard */ = {
+		8CD69C4D1AE348C500D6EDB7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8CEF54981AC8F792005906D1 /* Base */,
+				8CD69C4E1AE348C500D6EDB7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8CEF549C1AC8F792005906D1 /* LaunchScreen.xib */ = {
+		8CD69C521AE348C500D6EDB7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8CEF549D1AC8F792005906D1 /* Base */,
+				8CD69C531AE348C500D6EDB7 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +271,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8CEF54AB1AC8F792005906D1 /* Debug */ = {
+		8CD69C611AE348C500D6EDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,9 +290,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -289,16 +307,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8CEF54AC1AC8F792005906D1 /* Release */ = {
+		8CD69C621AE348C500D6EDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,16 +334,18 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,31 +353,32 @@
 			};
 			name = Release;
 		};
-		8CEF54AE1AC8F792005906D1 /* Debug */ = {
+		8CD69C641AE348C500D6EDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gary Johnson (62PCL36K84)";
 				INFOPLIST_FILE = sumobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		8CEF54AF1AC8F792005906D1 /* Release */ = {
+		8CD69C651AE348C500D6EDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gary Johnson (62PCL36K84)";
 				INFOPLIST_FILE = sumobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		8CEF54B11AC8F792005906D1 /* Debug */ = {
+		8CD69C671AE348C500D6EDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gary Johnson (62PCL36K84)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -374,11 +394,10 @@
 			};
 			name = Debug;
 		};
-		8CEF54B21AC8F792005906D1 /* Release */ = {
+		8CD69C681AE348C500D6EDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gary Johnson (62PCL36K84)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -393,34 +412,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CEF54891AC8F792005906D1 /* Build configuration list for PBXProject "sumobot" */ = {
+		8CD69C3B1AE348C500D6EDB7 /* Build configuration list for PBXProject "sumobot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CEF54AB1AC8F792005906D1 /* Debug */,
-				8CEF54AC1AC8F792005906D1 /* Release */,
+				8CD69C611AE348C500D6EDB7 /* Debug */,
+				8CD69C621AE348C500D6EDB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CEF54AD1AC8F792005906D1 /* Build configuration list for PBXNativeTarget "sumobot" */ = {
+		8CD69C631AE348C500D6EDB7 /* Build configuration list for PBXNativeTarget "sumobot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CEF54AE1AC8F792005906D1 /* Debug */,
-				8CEF54AF1AC8F792005906D1 /* Release */,
+				8CD69C641AE348C500D6EDB7 /* Debug */,
+				8CD69C651AE348C500D6EDB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		8CEF54B01AC8F792005906D1 /* Build configuration list for PBXNativeTarget "sumobotTests" */ = {
+		8CD69C661AE348C500D6EDB7 /* Build configuration list for PBXNativeTarget "sumobotTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CEF54B11AC8F792005906D1 /* Debug */,
-				8CEF54B21AC8F792005906D1 /* Release */,
+				8CD69C671AE348C500D6EDB7 /* Debug */,
+				8CD69C681AE348C500D6EDB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8CEF54861AC8F792005906D1 /* Project object */;
+	rootObject = 8CD69C381AE348C500D6EDB7 /* Project object */;
 }

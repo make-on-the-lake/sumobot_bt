@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B2A91198-1D24-4807-B1EC-987CBE1430D3</string>
+	<string>79A70EB1-B3DA-4F2F-B8C4-E6E54A127001</string>
 	<key>IDESourceControlProjectName</key>
-	<string>sumobot</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EE6D9BD9C8787F591A0AFD278E29916CD15C87AD</key>
 		<string>github.com:make-on-the-lake/sumobot_bt.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios/sumobot/sumobot.xcodeproj</string>
+	<string>ios/sumobot/sumobot.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EE6D9BD9C8787F591A0AFD278E29916CD15C87AD</key>
