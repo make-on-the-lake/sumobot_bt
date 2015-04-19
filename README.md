@@ -9,8 +9,8 @@ They are in this format:
 **Bytes** | **Section**
 ----------|------------
 1         | Start Byte
-2         | Message ID
-17        | Message Data
+1         | Message ID
+12        | Message Data
 1         | Parity Byte
 1         | End Byte
 
