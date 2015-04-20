@@ -25,7 +25,14 @@
     self.bluetoothManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_queue_create("com.makeonthelake.sumobot.bluetooth", NULL)];
 }
 
+- (BOOL)isConnected {
+    return _connectedPeripheral != nil;
+}
+
 - (void)write:(NSData *)data {
+    if(_connectedPeripheral == nil)
+        return;
+
     CBService *service = _connectedPeripheral.services.firstObject;
     CBCharacteristic *writeCharacteristic = service.characteristics.firstObject;
     if (!service || !writeCharacteristic)
@@ -52,6 +59,7 @@
 }
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)rssi {
+    self.connectedPeripheral = peripheral;
     [_connectedPeripheral setDelegate:self];
     [_bluetoothManager connectPeripheral:_connectedPeripheral options:nil];
 

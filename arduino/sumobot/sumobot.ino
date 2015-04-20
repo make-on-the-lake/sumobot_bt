@@ -26,18 +26,23 @@ void setup() {
 
 void loop() {
   String command = readCommand();
-  processMotorCommand(command);
+  if(command.length() > 0) {
+    processMotorCommand(command);
+  } else {
+    leftWheel.writeMicroseconds(SERVO_IDLE);
+    rightWheel.writeMicroseconds(SERVO_IDLE);
+  }
 }
 
 void processMotorCommand(String command) {
   unsigned int leftSpeed = 0;
-  leftSpeed += ((unsigned int)command[2]) << 8;
-  leftSpeed += ((unsigned int)command[3]);
+  leftSpeed += ((unsigned int)command[3]) << 8;
+  leftSpeed += ((unsigned int)command[2]);
   float leftSpeedRatio = (float)leftSpeed / (float)COMMAND_FULL_SPEED;
   
   unsigned int rightSpeed = 0;
-  rightSpeed += ((unsigned int)command[4]) << 8;
-  rightSpeed += ((unsigned int)command[5]);
+  rightSpeed += ((unsigned int)command[5]) << 8;
+  rightSpeed += ((unsigned int)command[4]);
   float rightSpeedRatio = (float)rightSpeed / (float)COMMAND_FULL_SPEED;
   
   float leftMotorSpeed = (leftSpeedRatio * SERVO_RANGE) + SERVO_OFFSET;
