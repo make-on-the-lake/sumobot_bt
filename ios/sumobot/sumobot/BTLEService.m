@@ -59,6 +59,10 @@
 }
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)rssi {
+    NSString *name = [[advertisementData valueForKey:CBAdvertisementDataLocalNameKey] lowercaseString];
+    if(![name isEqualToString:@"sumobot_bt"])
+        return;
+    
     self.connectedPeripheral = peripheral;
     [_connectedPeripheral setDelegate:self];
     [_bluetoothManager connectPeripheral:_connectedPeripheral options:nil];

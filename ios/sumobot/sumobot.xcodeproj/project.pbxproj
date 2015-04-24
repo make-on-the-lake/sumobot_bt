@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		426B2465B94DD7DBE36B9213 /* BTLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B240AF71365374AE070C2 /* BTLEService.m */; };
+		8C174FBC1AE603D800412431 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C174FBB1AE603D800412431 /* AppDelegate.m */; };
 		8CD69C461AE348C500D6EDB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD69C451AE348C500D6EDB7 /* main.m */; };
-		8CD69C491AE348C500D6EDB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD69C481AE348C500D6EDB7 /* AppDelegate.m */; };
 		8CD69C4C1AE348C500D6EDB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD69C4B1AE348C500D6EDB7 /* ViewController.m */; };
 		8CD69C4F1AE348C500D6EDB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD69C4D1AE348C500D6EDB7 /* Main.storyboard */; };
 		8CD69C511AE348C500D6EDB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD69C501AE348C500D6EDB7 /* Images.xcassets */; };
@@ -31,11 +31,11 @@
 		426B240AF71365374AE070C2 /* BTLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEService.m; sourceTree = "<group>"; };
 		426B293439C068C743BE1A68 /* BTLEServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEServiceDelegate.h; sourceTree = "<group>"; };
 		426B2AFD34D99E171ADCF155 /* BTLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEService.h; sourceTree = "<group>"; };
+		8C174FBB1AE603D800412431 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8CD69C401AE348C500D6EDB7 /* sumobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sumobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD69C441AE348C500D6EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD69C451AE348C500D6EDB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CD69C471AE348C500D6EDB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8CD69C481AE348C500D6EDB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8CD69C4A1AE348C500D6EDB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8CD69C4B1AE348C500D6EDB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8CD69C4E1AE348C500D6EDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 		8CD69C421AE348C500D6EDB7 /* sumobot */ = {
 			isa = PBXGroup;
 			children = (
+				8C174FBB1AE603D800412431 /* AppDelegate.m */,
 				8CD69C471AE348C500D6EDB7 /* AppDelegate.h */,
-				8CD69C481AE348C500D6EDB7 /* AppDelegate.m */,
 				8CD69C4A1AE348C500D6EDB7 /* ViewController.h */,
 				8CD69C4B1AE348C500D6EDB7 /* ViewController.m */,
 				8CD69C4D1AE348C500D6EDB7 /* Main.storyboard */,
@@ -226,8 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C174FBC1AE603D800412431 /* AppDelegate.m in Sources */,
 				8CD69C4C1AE348C500D6EDB7 /* ViewController.m in Sources */,
-				8CD69C491AE348C500D6EDB7 /* AppDelegate.m in Sources */,
 				8CD69C461AE348C500D6EDB7 /* main.m in Sources */,
 				426B2465B94DD7DBE36B9213 /* BTLEService.m in Sources */,
 			);
@@ -428,6 +428,7 @@
 				8CD69C651AE348C500D6EDB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CD69C661AE348C500D6EDB7 /* Build configuration list for PBXNativeTarget "sumobotTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +437,7 @@
 				8CD69C681AE348C500D6EDB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
