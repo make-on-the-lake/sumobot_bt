@@ -15,6 +15,7 @@ const unsigned char MOTOR_ID[] = {0x01};
 const unsigned char MOTOR_PADDING[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 const unsigned char EMPTY[] = {0x00};
 const unsigned char END[] = {0xEF};
+const int TRANSMIT_INTERVAL_SEC = 0.1;
 
 - (id)initWithCoder:(NSCoder *)coder {
     if(self = [super initWithCoder:coder]) {
@@ -91,11 +92,9 @@ const unsigned char END[] = {0xEF};
     [self stopCommandTimer];
 }
 
-
 - (void)startCommandTimer {
-    double interval = 0.1;
     _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
-    dispatch_source_set_timer(_timer, dispatch_time(DISPATCH_TIME_NOW, interval * NSEC_PER_SEC), interval * NSEC_PER_SEC, (1ull * NSEC_PER_SEC) / 10);
+    dispatch_source_set_timer(_timer, dispatch_time(DISPATCH_TIME_NOW, TRANSMIT_INTERVAL_SEC * NSEC_PER_SEC), TRANSMIT_INTERVAL_SEC * NSEC_PER_SEC, (1ull * NSEC_PER_SEC) / 10);
     dispatch_source_set_event_handler(_timer, ^{
         [self sendDriveCommand];
     });
