@@ -1,27 +1,25 @@
 package com.makeonthelake.sumobot;
 
 import android.content.Context;
-
-import com.makeonthelake.sumobot.R;
-
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.support.v4.view.MotionEventCompat;
 
 
 public class LateralView extends View {
+    private static final String DEBUG_TAG = "LATERAL_VIEW";
     private static final int TRACK_WIDTH = 20;
     private static final int SLIDER_WIDTH = 308;
     private static final int SLIDER_HEIGHT = 175;
-    private int mExampleColor = Color.RED;
-    private float mExampleDimension = 0;
-    private Drawable mExampleDrawable;
+    private static final int IDLE = 1001;
+    private static final int ACTIVE = 1002;
+
     private Drawable trackDrawable;
     private Drawable controlDrawable;
     private int paddingLeft;
@@ -30,7 +28,10 @@ public class LateralView extends View {
     private int paddingBottom;
     private int contentWidth;
     private int contentHeight;
-
+    private Rect sliderDockedLocation;
+    private Rect sliderMoveLocation = new Rect();
+    private int state = IDLE;
+    private int lastTouchY = 0;
 
     public LateralView(Context context) {
         super(context);
@@ -52,26 +53,21 @@ public class LateralView extends View {
         final TypedArray a = getContext().obtainStyledAttributes(
                 attrs, R.styleable.LateralView, defStyle, 0);
 
-        mExampleColor = a.getColor(
-                R.styleable.LateralView_exampleColor,
-                mExampleColor);
-        // Use getDimensionPixelSize or getDimensionPixelOffset when dealing with
-        // values that should fall on pixel boundaries.
-        mExampleDimension = a.getDimension(
-                R.styleable.LateralView_exampleDimension,
-                mExampleDimension);
-
-        if (a.hasValue(R.styleable.LateralView_exampleDrawable)) {
-            mExampleDrawable = a.getDrawable(
-                    R.styleable.LateralView_exampleDrawable);
-            mExampleDrawable.setCallback(this);
+        if (a.hasValue(R.styleable.LateralView_trackDrawable)) {
+            trackDrawable = a.getDrawable(
+                    R.styleable.LateralView_trackDrawable);
+            trackDrawable.setCallback(this);
         }
 
-        trackDrawable = getContext().getResources().getDrawable(R.mipmap.track);
-        controlDrawable = getContext().getResources().getDrawable(R.mipmap.slider);
+        if (a.hasValue(R.styleable.LateralView_controlDrawable)) {
+            controlDrawable = a.getDrawable(
+                    R.styleable.LateralView_controlDrawable);
+            controlDrawable.setCallback(this);
+        }
 
         a.recycle();
 
+        Log.d(DEBUG_TAG, "initialized");
     }
 
     @Override
@@ -84,6 +80,10 @@ public class LateralView extends View {
 
         contentWidth = getWidth() - paddingLeft - paddingRight;
         contentHeight = getHeight() - paddingTop - paddingBottom;
+
+        int startX = (getWidth() / 2) - (SLIDER_WIDTH / 2);
+        int startY = (getHeight() / 2) - (SLIDER_HEIGHT / 2);
+        sliderDockedLocation = new Rect(startX, startY, startX + SLIDER_WIDTH, startY + SLIDER_HEIGHT);
     }
 
     @Override
@@ -94,76 +94,87 @@ public class LateralView extends View {
         drawSlider(canvas);
     }
 
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        int action = MotionEventCompat.getActionMasked(event);
+        int screenX = (int) event.getRawX();
+        int screenY = (int) event.getRawY();
+        int[] location = new int[2];
+        getLocationOnScreen(location);
+        int x  = screenX - location[0];
+        int y  = screenY - location[1];
+
+
+        switch (action) {
+            case (MotionEvent.ACTION_DOWN):
+                Log.d(DEBUG_TAG, "Action was DOWN");
+                sliderMoveLocation = new Rect(x, y, x+15, y+20);
+                lastTouchY = y;
+
+                Log.d(DEBUG_TAG, "Hit:  " + Rect.intersects(sliderDockedLocation, sliderMoveLocation));
+                if (Rect.intersects(sliderDockedLocation, sliderMoveLocation)) {
+                    sliderMoveLocation = new Rect(sliderDockedLocation);
+                    state = ACTIVE;
+                }
+                return true;
+            case (MotionEvent.ACTION_MOVE):
+                if (state != ACTIVE)
+                    return false;
+
+                int distanceMovedY = y - lastTouchY;
+                Log.d(DEBUG_TAG, "Action was MOVE, traveled: " + distanceMovedY);
+                sliderMoveLocation.offset(0, distanceMovedY);
+                lastTouchY = y;
+                invalidate();
+                return true;
+
+            case (MotionEvent.ACTION_UP):
+                Log.d(DEBUG_TAG, "Action was UP");
+                state = IDLE;
+                invalidate();
+                return true;
+            case (MotionEvent.ACTION_CANCEL):
+                state = IDLE;
+                Log.d(DEBUG_TAG, "Action was CANCEL");
+                return true;
+            case (MotionEvent.ACTION_OUTSIDE):
+                Log.d(DEBUG_TAG, "Movement occurred outside bounds " +
+                        "of current screen element");
+                return true;
+            default:
+                return super.onTouchEvent(event);
+        }
+    }
+
     private void drawSlider(Canvas canvas) {
-        int startX = (getWidth() / 2) - (SLIDER_WIDTH / 2);
-        int startY = (getHeight() / 2) - (SLIDER_HEIGHT / 2);
-        controlDrawable.setBounds(startX, startY,
-                startX + SLIDER_WIDTH, startY + SLIDER_HEIGHT);
+        if (controlDrawable == null)
+            return;
+
+        if (state == IDLE) {
+            controlDrawable.setBounds(sliderDockedLocation);
+        } else {
+            controlDrawable.setBounds(sliderMoveLocation);
+        }
+
         controlDrawable.draw(canvas);
     }
 
     private void drawTrack(Canvas canvas) {
+        if (trackDrawable == null)
+            return;
+
         int startX = (getWidth() / 2) - (TRACK_WIDTH / 2);
         trackDrawable.setBounds(startX, paddingTop,
                 startX + TRACK_WIDTH, paddingTop + contentHeight);
         trackDrawable.draw(canvas);
     }
 
-
-    /**
-     * Gets the example color attribute value.
-     *
-     * @return The example color attribute value.
-     */
-    public int getExampleColor() {
-        return mExampleColor;
+    public Drawable getTrackDrawable() {
+        return trackDrawable;
     }
 
-    /**
-     * Sets the view's example color attribute value. In the example view, this color
-     * is the font color.
-     *
-     * @param exampleColor The example color attribute value to use.
-     */
-    public void setExampleColor(int exampleColor) {
-        mExampleColor = exampleColor;
-    }
-
-    /**
-     * Gets the example dimension attribute value.
-     *
-     * @return The example dimension attribute value.
-     */
-    public float getExampleDimension() {
-        return mExampleDimension;
-    }
-
-    /**
-     * Sets the view's example dimension attribute value. In the example view, this dimension
-     * is the font size.
-     *
-     * @param exampleDimension The example dimension attribute value to use.
-     */
-    public void setExampleDimension(float exampleDimension) {
-        mExampleDimension = exampleDimension;
-    }
-
-    /**
-     * Gets the example drawable attribute value.
-     *
-     * @return The example drawable attribute value.
-     */
-    public Drawable getExampleDrawable() {
-        return mExampleDrawable;
-    }
-
-    /**
-     * Sets the view's example drawable attribute value. In the example view, this drawable is
-     * drawn above the text.
-     *
-     * @param exampleDrawable The example drawable attribute value to use.
-     */
-    public void setExampleDrawable(Drawable exampleDrawable) {
-        mExampleDrawable = exampleDrawable;
+    public void setTrackDrawableDrawable(Drawable trackDrawable) {
+        this.trackDrawable = trackDrawable;
     }
 }

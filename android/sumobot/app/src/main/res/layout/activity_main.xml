@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
@@ -9,15 +10,19 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:paddingBottom="20dp"
-        android:paddingTop="20dp" />
+        android:paddingTop="20dp"
+        app:controlDrawable="@mipmap/slider"
+        app:trackDrawable="@mipmap/track" />
 
     <com.makeonthelake.sumobot.LateralView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:paddingBottom="20dp"
-        android:paddingTop="20dp" />
+        android:paddingTop="20dp"
+        app:controlDrawable="@mipmap/slider"
+        app:trackDrawable="@mipmap/track" />
 
     <com.makeonthelake.sumobot.LateralView
         android:layout_width="150dp"
@@ -25,6 +30,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:paddingBottom="20dp"
-        android:paddingTop="20dp" />
+        android:paddingTop="20dp"
+        app:controlDrawable="@mipmap/slider"
+        app:trackDrawable="@mipmap/track" />
 
 </RelativeLayout>
