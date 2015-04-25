@@ -100,8 +100,6 @@ public class LateralView extends View {
         controlDrawable.setBounds(startX, startY,
                 startX + SLIDER_WIDTH, startY + SLIDER_HEIGHT);
         controlDrawable.draw(canvas);
-
-
     }
 
     private void drawTrack(Canvas canvas) {

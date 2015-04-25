@@ -13,6 +13,14 @@
 
     <com.makeonthelake.sumobot.LateralView
         android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" />
+
+    <com.makeonthelake.sumobot.LateralView
+        android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
