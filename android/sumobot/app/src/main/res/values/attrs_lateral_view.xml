@@ -1,8 +1,7 @@
 <resources>
     <declare-styleable name="LateralView">
-        <attr name="exampleString" format="string" />
-        <attr name="exampleDimension" format="dimension" />
-        <attr name="exampleColor" format="color" />
-        <attr name="exampleDrawable" format="color|reference" />
+        <attr name="trackDrawable" format="reference" />
+        <attr name="controlDrawable" format="reference" />
+        <attr name="controlActiveDrawable" format="reference" />
     </declare-styleable>
 </resources>
