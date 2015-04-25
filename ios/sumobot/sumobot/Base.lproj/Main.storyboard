@@ -136,7 +136,7 @@
     </scenes>
     <resources>
         <image name="button" width="294" height="132"/>
-        <image name="button_pressed" width="248" height="92"/>
+        <image name="button_pressed" width="294" height="132"/>
         <image name="screen" width="508" height="433"/>
         <image name="thumb" width="174" height="174"/>
         <image name="track" width="35" height="234"/>

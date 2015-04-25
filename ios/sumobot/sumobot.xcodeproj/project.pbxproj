@@ -175,6 +175,7 @@
 				TargetAttributes = {
 					8CD69C3F1AE348C500D6EDB7 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 5D9WAKM8D6;
 					};
 					8CD69C581AE348C500D6EDB7 = {
 						CreatedOnToolsVersion = 6.3;
@@ -357,8 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gary Johnson (62PCL36K84)";
 				INFOPLIST_FILE = sumobot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -368,8 +371,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gary Johnson (62PCL36K84)";
 				INFOPLIST_FILE = sumobot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
