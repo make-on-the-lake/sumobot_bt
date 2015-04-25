@@ -49,8 +49,9 @@ Toggles a general usage GPIO pin high or low.
 ----------|------------
 1         | Start (0xAB)
 1         | Message ID (0x02)
+1         | Button ID
 1         | GPIO Status
-11        | Padding (Zeroes)
+10        | Padding (Zeroes)
 1         | Parity Byte
 1         | End (0xEF)
 

@@ -26,7 +26,7 @@ const int TRANSMIT_INTERVAL_SEC = 0.1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setUserInteractionEnabled:NO];
+    //[self.view setUserInteractionEnabled:NO];
     [_bluetooth startSearching];
 }
 
@@ -45,16 +45,13 @@ const int TRANSMIT_INTERVAL_SEC = 0.1;
         [UIView animateWithDuration:0.4 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:1
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{ view.center = track.center; }
-                         completion:^(BOOL finished)
-                        {
-                            view.center = track.center;
-                        }];
-    }
-    
-    CGFloat newY = view.center.y + translation.y;
-    if(newY > track.frame.origin.y && newY < track.frame.origin.y + track.frame.size.height) {
-        view.center = CGPointMake(view.center.x, view.center.y + translation.y);
-        [recognizer setTranslation:CGPointZero inView:self.view];
+                         completion:nil];
+    } else {
+        CGFloat newY = view.center.y + translation.y;
+        if(newY > track.frame.origin.y && newY < track.frame.origin.y + track.frame.size.height) {
+            view.center = CGPointMake(view.center.x, view.center.y + translation.y);
+            [recognizer setTranslation:CGPointZero inView:self.view];
+        }
     }
 }
 
@@ -72,7 +69,6 @@ const int TRANSMIT_INTERVAL_SEC = 0.1;
     [command appendBytes:START length:sizeof(START)/sizeof(char)];
     [command appendBytes:MOTOR_ID length:sizeof(MOTOR_ID)/sizeof(char)];
 
-    NSLog(@"leftSpeed: %i, rightSpeed: %i", leftSpeed, rightSpeed);
     [command appendBytes:&leftSpeed length:2];
     [command appendBytes:&rightSpeed length:2];
 
