@@ -18,9 +18,13 @@ SoftwareSerial softSerial(6, 7);
 char commandBuffer[BUFSIZE];
 int bufferPos = 0;
 
+union u_tag {
+    byte buffer[4];
+    unsigned int value;
+} u;
 void setup() {
-  softSerial.begin(57600);
   Serial.begin(57600);
+  softSerial.begin(57600);
 
   leftWheel.attach(LEFT_WHEEL_PIN, SERVO_OFFSET, SERVO_FULL_SPEED);
   rightWheel.attach(RIGHT_WHEEL_PIN, SERVO_OFFSET, SERVO_FULL_SPEED);
@@ -30,22 +34,23 @@ void setup() {
 }
 
 void processMessage(const char *command) {
-  // this is only a test, so we just
-  // print out the message
-  Serial.print("Received:");
-  Serial.println(command);
 
-  unsigned int leftSpeed = 0;
-  leftSpeed += ((unsigned int)command[3]) << 8;
-  leftSpeed += ((unsigned int)command[2]);
-  leftSpeed = min(leftSpeed, COMMAND_FULL_SPEED);
-  leftSpeed = max(leftSpeed, 0);
-
-  unsigned int rightSpeed = 0;
-  rightSpeed += ((unsigned int)command[5]) << 8;
-  rightSpeed += ((unsigned int)command[4]);
-  rightSpeed = min(rightSpeed, COMMAND_FULL_SPEED);
-  rightSpeed = max(rightSpeed, 0);
+  u.buffer[0] = command[2];
+  u.buffer[1] = command[3];
+  u.buffer[2] = command[4];
+  u.buffer[3] = command[5];
+  unsigned int leftSpeed = u.value;
+  
+  u.buffer[0] = command[6];
+  u.buffer[1] = command[7];
+  u.buffer[2] = command[8];
+  u.buffer[3] = command[9];
+  unsigned int rightSpeed = u.value;
+  
+  Serial.print("l:");
+  Serial.print(leftSpeed);
+  Serial.print(" r:");
+  Serial.println(rightSpeed);
 
   float leftSpeedRatio = ((float)leftSpeed) / ((float)COMMAND_FULL_SPEED);
   leftSpeedRatio = 1.0 - leftSpeedRatio;

@@ -12,10 +12,10 @@
 
 const unsigned char START[] = {0xAB};
 const unsigned char MOTOR_ID[] = {0x01};
-const unsigned char MOTOR_PADDING[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+const unsigned char MOTOR_PADDING[] = {0x00, 0x00, 0x00, 0x00};
 const unsigned char EMPTY[] = {0x00};
 const unsigned char END[] = {0xEF};
-const int TRANSMIT_INTERVAL_SEC = 0.1;
+const double TRANSMIT_INTERVAL_SEC = 0.1;
 
 - (id)initWithCoder:(NSCoder *)coder {
     if(self = [super initWithCoder:coder]) {
@@ -26,7 +26,7 @@ const int TRANSMIT_INTERVAL_SEC = 0.1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self.view setUserInteractionEnabled:NO];
+    [self.view setUserInteractionEnabled:NO];
     [_bluetooth startSearching];
 }
 
@@ -64,13 +64,15 @@ const int TRANSMIT_INTERVAL_SEC = 0.1;
     [_bluetooth write:command];
 }
 
-- (NSData*)buildCommandWithLeftSpeed:(unsigned short)leftSpeed andRightSpeed:(unsigned short)rightSpeed {
+- (NSData*)buildCommandWithLeftSpeed:(unsigned int)leftSpeed andRightSpeed:(unsigned int)rightSpeed {
+    NSLog(@"l:%i r:%i", leftSpeed, rightSpeed);
+    
     NSMutableData *command = [NSMutableData dataWithCapacity:16];
     [command appendBytes:START length:sizeof(START)/sizeof(char)];
     [command appendBytes:MOTOR_ID length:sizeof(MOTOR_ID)/sizeof(char)];
 
-    [command appendBytes:&leftSpeed length:2];
-    [command appendBytes:&rightSpeed length:2];
+    [command appendBytes:&leftSpeed length:4];
+    [command appendBytes:&rightSpeed length:4];
 
     [command appendBytes:MOTOR_PADDING length:sizeof(MOTOR_PADDING)/sizeof(char)];
     [command appendBytes:EMPTY length:sizeof(EMPTY)/sizeof(char)];
