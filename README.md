@@ -1,5 +1,9 @@
 # Sumobot BT
 
+## Attribution
+
+This project is based heavily on the wonderful [sumobot-jr](https://github.com/makenai/sumobot-jr) project. Thanks to the maintainers for some awesome resources!
+
 ## Communication Protocol
 
 All messages are 16 bytes, which is under the maximum size of 20 for a single message payload over Bluetooth LE.
@@ -30,13 +34,13 @@ Controls the motors individually.
 ----------|------------
 1         | Start (0xAB)
 1         | Message ID (0x01)
-2         | Left Motor
-2         | Right Motor
-8         | Padding (Zeroes)
+4         | Left Motor
+4         | Right Motor
+4         | Padding (Zeroes)
 1         | Parity Byte
 1         | End (0xEF)
 
-Left Motor and Right Motor are 2-byte ints, with a range from 0 to 1024. 
+Left Motor and Right Motor are 4-byte unsigned ints, with a range from 0 to 1024. 
 512 is resting, 0 is full reverse, and 1024 is full forward.
 
 #### Button
