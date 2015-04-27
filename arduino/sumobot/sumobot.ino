@@ -8,9 +8,14 @@ const int SERVO_RANGE = SERVO_FULL_SPEED - SERVO_OFFSET;
 const int COMMAND_FULL_SPEED = 1024;
 const int LEFT_WHEEL_PIN = 4;
 const int RIGHT_WHEEL_PIN = 5;
+
 const char START_CODE = 0xAB;
 const char END_CODE = 0xEF;
 const int BUFSIZE = 17;
+
+const char COMMAND_MOTOR_SPEED = 0x01;
+const char COMMAND_GPIO = 0x02;
+
 
 Servo leftWheel;
 Servo rightWheel;
@@ -22,9 +27,15 @@ union u_tag {
     byte buffer[4];
     unsigned int value;
 } u;
+
 void setup() {
   Serial.begin(57600);
   softSerial.begin(57600);
+  
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
 
   leftWheel.attach(LEFT_WHEEL_PIN, SERVO_OFFSET, SERVO_FULL_SPEED);
   rightWheel.attach(RIGHT_WHEEL_PIN, SERVO_OFFSET, SERVO_FULL_SPEED);
@@ -34,7 +45,16 @@ void setup() {
 }
 
 void processMessage(const char *command) {
+  char commandType = command[1];
+  
+  if(commandType == COMMAND_MOTOR_SPEED) {
+    processMotorSpeedMessage(command);
+  } else if(commandType == COMMAND_GPIO) {
+    processGpioMessage(command);
+  }
+}
 
+void processMotorSpeedMessage(const char *command) {
   u.buffer[0] = command[2];
   u.buffer[1] = command[3];
   u.buffer[2] = command[4];
@@ -71,6 +91,16 @@ void processMessage(const char *command) {
   rightWheel.writeMicroseconds(rightMotorSpeed);
 }
 
+void processGpioMessage(const char *command) {
+  unsigned int buttonId = command[2];
+  unsigned int high = command[3];
+  
+  if(buttonId < 0 || buttonId > 3)
+    return;
+    
+  digitalWrite(buttonId + 10, high);
+}
+
 void loop () {
   char ch;
 
@@ -81,15 +111,11 @@ void loop () {
       commandBuffer[bufferPos] = 0;
       processMessage(commandBuffer);
       bufferPos = 0;
-    }
-    else {
-      if (bufferPos < (BUFSIZE - 1)) {
-        commandBuffer[bufferPos] = ch;
-        bufferPos++;
-      }
-      else {
-        Serial.println("Lost byte!");
-      }
+    } else if (bufferPos < (BUFSIZE - 1)) {
+      commandBuffer[bufferPos] = ch;
+      bufferPos++;
+    } else {
+      Serial.println("Lost byte!");
     }
   }
   
