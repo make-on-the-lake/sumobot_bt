@@ -2,8 +2,10 @@ package com.makeonthelake.sumobot;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -14,11 +16,14 @@ import android.support.v4.view.MotionEventCompat;
 
 public class LateralView extends View {
     private static final String DEBUG_TAG = "LATERAL_VIEW";
-    private static final int TRACK_WIDTH = 20;
-    private static final int SLIDER_WIDTH = 308;
-    private static final int SLIDER_HEIGHT = 175;
+
     private static final int IDLE = 1001;
     private static final int ACTIVE = 1002;
+
+    private int TRACK_WIDTH = 20;
+    private int TRACK_HEIGHT = 20;
+    private int SLIDER_HEIGHT = 175;
+    private int SLIDER_WIDTH = 308;
 
     private Drawable trackDrawable;
     private Drawable controlDrawable;
@@ -57,12 +62,18 @@ public class LateralView extends View {
             trackDrawable = a.getDrawable(
                     R.styleable.LateralView_trackDrawable);
             trackDrawable.setCallback(this);
+            Bitmap trackBitmap = ((BitmapDrawable) trackDrawable).getBitmap();
+            TRACK_HEIGHT = trackBitmap.getHeight();
+            TRACK_WIDTH = trackBitmap.getWidth();
         }
 
         if (a.hasValue(R.styleable.LateralView_controlDrawable)) {
             controlDrawable = a.getDrawable(
                     R.styleable.LateralView_controlDrawable);
             controlDrawable.setCallback(this);
+            Bitmap controlBitmap = ((BitmapDrawable) controlDrawable).getBitmap();
+            SLIDER_HEIGHT = controlBitmap.getHeight();
+            SLIDER_WIDTH = controlBitmap.getWidth();
         }
 
         a.recycle();
