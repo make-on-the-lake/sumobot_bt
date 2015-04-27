@@ -5,6 +5,7 @@
 
 @property BTLEService *bluetooth;
 @property dispatch_source_t timer;
+@property BOOL buttonState;
 
 @end
 
@@ -12,7 +13,9 @@
 
 const unsigned char START[] = {0xAB};
 const unsigned char MOTOR_ID[] = {0x01};
+const unsigned char BUTTON_ID[] = {0x02};
 const unsigned char MOTOR_PADDING[] = {0x00, 0x00, 0x00, 0x00};
+const unsigned char BUTTON_PADDING[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 const unsigned char EMPTY[] = {0x00};
 const unsigned char END[] = {0xEF};
 const double TRANSMIT_INTERVAL_SEC = 0.1;
@@ -26,8 +29,7 @@ const double TRANSMIT_INTERVAL_SEC = 0.1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setUserInteractionEnabled:NO];
-    [_bluetooth startSearching];
+    [self showSettings];
 }
 
 -(IBAction)onRightThumbDragged:(UIPanGestureRecognizer*)recognizer {
@@ -65,8 +67,6 @@ const double TRANSMIT_INTERVAL_SEC = 0.1;
 }
 
 - (NSData*)buildCommandWithLeftSpeed:(unsigned int)leftSpeed andRightSpeed:(unsigned int)rightSpeed {
-    NSLog(@"l:%i r:%i", leftSpeed, rightSpeed);
-    
     NSMutableData *command = [NSMutableData dataWithCapacity:16];
     [command appendBytes:START length:sizeof(START)/sizeof(char)];
     [command appendBytes:MOTOR_ID length:sizeof(MOTOR_ID)/sizeof(char)];
@@ -80,15 +80,67 @@ const double TRANSMIT_INTERVAL_SEC = 0.1;
     return command;
 }
 
+-(IBAction)onGpioTapped:(id)sender {
+    self.buttonState = !self.buttonState;
+    NSData *command = [self buildCommandForButton:0 andState:_buttonState];
+    [_bluetooth write:command];
+}
+
+- (NSData*)buildCommandForButton:(unsigned int)buttonIndex andState:(BOOL)isHigh {
+    NSMutableData *command = [NSMutableData dataWithCapacity:16];
+    [command appendBytes:START length:sizeof(START)/sizeof(char)];
+    [command appendBytes:BUTTON_ID length:sizeof(BUTTON_ID)/sizeof(char)];
+    
+    [command appendBytes:&buttonIndex length:1];
+    [command appendBytes:&isHigh length:1];
+    
+    [command appendBytes:BUTTON_PADDING length:sizeof(BUTTON_PADDING)/sizeof(char)];
+    [command appendBytes:EMPTY length:sizeof(EMPTY)/sizeof(char)];
+    [command appendBytes:END length:sizeof(END)/sizeof(char)];
+    return command;
+}
+
 - (void)onBluetoothServiceConnected {
-    [self.view setUserInteractionEnabled:YES];
     [self startCommandTimer];
+    [self showConnected];
 }
 
 - (void)onBluetoothServiceDisconnected {
-    [self.view setUserInteractionEnabled:NO];
     [self stopCommandTimer];
+    [self showSearching];
 }
+
+- (void)onLeavingSettings {
+    _bluetooth.name = _name.text;
+    [_bluetooth startSearching];
+    [self showSearching];
+}
+
+-(IBAction)onSettingsTapped:(id)sender {
+    [self stopCommandTimer];
+    [_bluetooth stop];
+    [self showSettings];
+}
+
+-(IBAction)onBackTapped:(id)sender {
+    [self onLeavingSettings];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self onLeavingSettings];
+    return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSRange lowercaseCharRange = [string rangeOfCharacterFromSet:[NSCharacterSet lowercaseLetterCharacterSet]];
+    if (lowercaseCharRange.location != NSNotFound) {
+        textField.text = [textField.text stringByReplacingCharactersInRange:range withString:[string uppercaseString]];
+        return NO;
+    }
+
+    return YES;
+}
+
 
 - (void)startCommandTimer {
     _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
@@ -100,7 +152,38 @@ const double TRANSMIT_INTERVAL_SEC = 0.1;
 }
 
 - (void)stopCommandTimer {
-    dispatch_source_cancel(_timer);
+    if(_timer)
+        dispatch_source_cancel(_timer);
+}
+
+- (void)showSettings {
+    [_spinner stopAnimating];
+    _status.hidden = YES;
+    _settingsButton.hidden = YES;
+    _backButton.hidden = NO;
+    _name.enabled = YES;
+    [_name becomeFirstResponder];
+}
+
+- (void)showConnected {
+    _name.enabled = NO;
+    [_name resignFirstResponder];
+    [_spinner stopAnimating];
+    _status.hidden = NO;
+    _status.text = @"CONNECTED";
+    _settingsButton.hidden = NO;
+    _backButton.hidden = YES;
+}
+
+- (void)showSearching {
+    _name.enabled = NO;
+    [_name resignFirstResponder];
+    [_spinner startAnimating];
+    _spinner.hidden = NO;
+    _status.hidden = NO;
+    _status.text = @"SEARCHING";
+    _settingsButton.hidden = NO;
+    _backButton.hidden = YES;
 }
 
 @end

@@ -43,6 +43,10 @@
 
 - (void)stop {
     [_bluetoothManager stopScan];
+    if(_connectedPeripheral){
+        [_bluetoothManager cancelPeripheralConnection:_connectedPeripheral];
+        _connectedPeripheral = nil;
+    }
 }
 
 - (void)startSearchingForPeripherals {
@@ -60,7 +64,7 @@
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)rssi {
     NSString *name = [[advertisementData valueForKey:CBAdvertisementDataLocalNameKey] lowercaseString];
-    if(![name isEqualToString:@"sumobot_bt"])
+    if(![name isEqualToString:[_name lowercaseString]])
         return;
     
     self.connectedPeripheral = peripheral;
