@@ -37,6 +37,8 @@ public class LateralView extends View {
     private Rect sliderMoveLocation = new Rect();
     private int state = IDLE;
     private int lastTouchY = 0;
+    private int trackStartX;
+    private int trackStartY;
 
     public LateralView(Context context) {
         super(context);
@@ -95,6 +97,9 @@ public class LateralView extends View {
         int startX = (getWidth() / 2) - (SLIDER_WIDTH / 2);
         int startY = (getHeight() / 2) - (SLIDER_HEIGHT / 2);
         sliderDockedLocation = new Rect(startX, startY, startX + SLIDER_WIDTH, startY + SLIDER_HEIGHT);
+
+        trackStartX = (getWidth() / 2) - (TRACK_WIDTH / 2);
+        trackStartY = (getHeight() / 2) - (TRACK_HEIGHT / 2);
     }
 
     @Override
@@ -136,6 +141,14 @@ public class LateralView extends View {
                 int distanceMovedY = y - lastTouchY;
                 Log.d(DEBUG_TAG, "Action was MOVE, traveled: " + distanceMovedY);
                 sliderMoveLocation.offset(0, distanceMovedY);
+
+                if (sliderMoveLocation.exactCenterY() <= trackStartY) {
+                    sliderMoveLocation.offset(0, -distanceMovedY);
+                } else if (sliderMoveLocation.exactCenterY() >= trackStartY + TRACK_HEIGHT) {
+                    sliderMoveLocation.offset(0, -distanceMovedY);
+                }
+
+
                 lastTouchY = y;
                 invalidate();
                 return true;
@@ -175,9 +188,8 @@ public class LateralView extends View {
         if (trackDrawable == null)
             return;
 
-        int startX = (getWidth() / 2) - (TRACK_WIDTH / 2);
-        trackDrawable.setBounds(startX, paddingTop,
-                startX + TRACK_WIDTH, paddingTop + contentHeight);
+        trackDrawable.setBounds(trackStartX, trackStartY,
+                trackStartX + TRACK_WIDTH, trackStartY + TRACK_HEIGHT);
         trackDrawable.draw(canvas);
     }
 
