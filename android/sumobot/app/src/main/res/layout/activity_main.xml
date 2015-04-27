@@ -11,18 +11,18 @@
         android:layout_alignParentTop="true"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
-        app:controlDrawable="@mipmap/slider"
+        app:controlDrawable="@mipmap/thumb"
         app:trackDrawable="@mipmap/track" />
 
-    <com.makeonthelake.sumobot.LateralView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-        app:controlDrawable="@mipmap/slider"
-        app:trackDrawable="@mipmap/track" />
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:src="@mipmap/button"
+
+        />
 
     <com.makeonthelake.sumobot.LateralView
         android:layout_width="150dp"
@@ -31,7 +31,7 @@
         android:layout_alignParentTop="true"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
-        app:controlDrawable="@mipmap/slider"
+        app:controlDrawable="@mipmap/thumb"
         app:trackDrawable="@mipmap/track" />
 
 </RelativeLayout>
