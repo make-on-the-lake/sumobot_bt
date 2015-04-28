@@ -51,7 +51,6 @@ public class MainActivity extends Activity {
     private void connectToBot(String botName) {
         if (hasBotName(botName)) {
             botNameView.setText(botName);
-            connectToBot(botName);
         } else {
             botNameView.setText(getString(R.string.empty_bot_name_message));
             showConfigurationState();
