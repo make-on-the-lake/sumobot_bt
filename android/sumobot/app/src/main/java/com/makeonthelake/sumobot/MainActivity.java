@@ -1,7 +1,9 @@
 package com.makeonthelake.sumobot;
 
 import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -15,6 +17,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
     private static final String PREF_KEY = "SUMO_BOT_PREFS";
+    private static final int REQUEST_ENABLE_BT = 10001;
 
     TextView botNameView;
     View runState;
@@ -23,6 +26,7 @@ public class MainActivity extends Activity {
     View backButton;
     View settingsButton;
     View blutoothButton;
+    String botName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +49,28 @@ public class MainActivity extends Activity {
     protected void onStart() {
         super.onStart();
         SharedPreferences sharedPreferences = getSharedPreferences(PREF_KEY, 0);
-        connectToBot(sharedPreferences.getString(getString(R.string.pref_name_key), ""));
+        botName = sharedPreferences.getString(getString(R.string.pref_name_key), "");
+        connectToBot(botName);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_ENABLE_BT) {
+            connectToBot(botName);
+        }
     }
 
     private void connectToBot(String botName) {
         if (hasBotName(botName)) {
             botNameView.setText(botName);
+            BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+            if (!mBluetoothAdapter.isEnabled()) {
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+            }
         } else {
             botNameView.setText(getString(R.string.empty_bot_name_message));
             showConfigurationState();
@@ -76,7 +96,7 @@ public class MainActivity extends Activity {
     }
 
     private void saveName() {
-        String botName = editBotNameTextView.getText().toString();
+        botName = editBotNameTextView.getText().toString();
         saveBotName(botName);
         InputMethodManager imm = (InputMethodManager) getSystemService(
                 Context.INPUT_METHOD_SERVICE);
