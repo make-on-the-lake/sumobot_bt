@@ -186,4 +186,12 @@ const double TRANSMIT_INTERVAL_SEC = 0.1;
     _backButton.hidden = YES;
 }
 
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 @end
