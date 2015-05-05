@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,6 +20,35 @@ import java.util.UUID;
 
 public class SumoBot {
     private final static String DEBUG_TAG = SumoBot.class.getName();
+
+    public static byte[] hexStringToByteArray(String s) {
+        int len = s.length();
+        byte[] data = new byte[len / 2];
+        for (int i = 0; i < len; i += 2) {
+            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4)
+                    + Character.digit(s.charAt(i + 1), 16));
+        }
+        return data;
+    }
+
+    final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
+
+    public static String bytesToHex(byte[] bytes) {
+        char[] hexChars = new char[bytes.length * 2];
+
+        for (int j = 0; j < bytes.length; j++) {
+
+            int v = bytes[j] & 0xFF;
+            hexChars[j * 2] = hexArray[v >>> 4];
+            hexChars[j * 2 + 1] = hexArray[v & 0x0F];
+        }
+        return new String(hexChars);
+    }
+
+    public static byte[] convertInt(int value) {
+        return ByteBuffer.allocate(4).putInt(value).array();
+    }
+
     public final static int SCAN_PERIOD = 10000;
 
     public final static int DISCONNECTED = 1000;
@@ -29,13 +59,13 @@ public class SumoBot {
     private static final String SERVICE_ID = "ffe0";
     private static final String WRITE_ID = "ffe1";
 
-    private static final char START[] = {0xAB};
-    private static final char MOTOR_ID[] = {0x01};
-    private static final char BUTTON_ID[] = {0x02};
-    private static final char MOTOR_PADDING[] = {0x00, 0x00, 0x00, 0x00};
-    private static final char BUTTON_PADDING[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-    private static final char EMPTY[] = {0x00};
-    private static final char END[] = {0xEF};
+    private static final byte START[] = hexStringToByteArray("0xAB");
+    private static final byte MOTOR_ID[] = hexStringToByteArray("0x01");
+    private static final byte BUTTON_ID[] = hexStringToByteArray("0x02");
+    private static final byte MOTOR_PADDING[] = hexStringToByteArray("0x000x000x000x00");
+    private static final byte BUTTON_PADDING[] = {(byte) 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+    private static final byte EMPTY[] = hexStringToByteArray("0x00");
+    private static final byte END[] = hexStringToByteArray("0xEF");
 
     Handler connectionHandler = new Handler();
     Handler driveHandler = new Handler();
@@ -126,20 +156,24 @@ public class SumoBot {
     }
 
     private void drive() {
-        StringBuilder builder = new StringBuilder();
-        builder.append(START);
-        builder.append(MOTOR_ID);
-        builder.append("0512");
-        builder.append("1024");
-        builder.append(MOTOR_PADDING);
-        builder.append(EMPTY);
-        builder.append(END);
-        Log.i(DEBUG_TAG, "Drive Command Len: " + builder.toString().length());
-        Log.i(DEBUG_TAG, "Drive Command:" + builder.toString());
-        driveHandler.postDelayed(driveRunable, 100);
+
         if (connectionState == CONNECTED && writeCharacteristic != null) {
-            //writeCharacteristic.setValue(builder.toString());
-            //bluetoothGatt.writeCharacteristic(writeCharacteristic);
+            ByteBuffer buffer = ByteBuffer.allocate(16);
+            buffer.put(START);
+            buffer.put(MOTOR_ID);
+            buffer.put(convertInt(512));
+            buffer.put(convertInt(1024));
+            buffer.put(EMPTY);
+            buffer.put(END);
+
+            byte[] command = buffer.array();
+            Log.i(DEBUG_TAG, "Drive Command Len: " + command.length);
+            Log.i(DEBUG_TAG, "Drive Command:" + bytesToHex(command));
+
+
+            writeCharacteristic.setValue(command);
+            bluetoothGatt.writeCharacteristic(writeCharacteristic);
+            driveHandler.postDelayed(driveRunable, 100);
         }
     }
 
@@ -170,15 +204,12 @@ public class SumoBot {
     }
 
     public void connect() {
-        /*
         if (!bluetoothAdapter.isEnabled()) {
             sumoBotConnectionListener.onSumoBotRequestsBluetoothEnabled();
         } else {
             if (connectionState != DISCONNECTED || connectionState != SCANNING)
                 scanForSumobot(true);
         }
-        */
-        drive();
     }
 
     public void disConnect() {
