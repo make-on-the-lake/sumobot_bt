@@ -9,24 +9,25 @@ import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothProfile;
 import android.content.Context;
 import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 
-import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.UUID;
+import java.nio.ByteBuffer/**/;
 
 public class SumoBot {
     private final static String DEBUG_TAG = SumoBot.class.getName();
 
-    public static byte[] hexStringToByteArray(String s) {
-        int len = s.length();
-        byte[] data = new byte[len / 2];
-        for (int i = 0; i < len; i += 2) {
-            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4)
-                    + Character.digit(s.charAt(i + 1), 16));
+
+    public static byte[] hexStringToByteArray(String hexString) {
+        if (hexString.startsWith("0x")) {
+            hexString = hexString.replaceFirst("0x", "");
+        }
+        String[] bites = hexString.split("0x");
+        byte[] data = new byte[bites.length];
+        for (int i = 0; i < data.length; i++) {
+            Log.d(DEBUG_TAG, bites[i]);
+            if (!bites[i].isEmpty()) {
+                data[i] = (byte) (Integer.parseInt(bites[i].toLowerCase(), 16) & 0xff);
+            }
         }
         return data;
     }
@@ -46,7 +47,17 @@ public class SumoBot {
     }
 
     public static byte[] convertInt(int value) {
-        return ByteBuffer.allocate(4).putInt(value).array();
+        Log.d(DEBUG_TAG, "int value to convert: " + value);
+        byte[] converted = ByteBuffer.allocate(4).putInt(value).array();
+        Log.d(DEBUG_TAG, "bytes from buffer: " + bytesToHex(converted));
+        byte[] result = new byte[4];
+
+        result[0] = (byte) (value >>> 24);
+        result[1] = (byte) (value >>> 16);
+        result[2] = (byte) (value >>> 8);
+        result[3] = (byte) (value /*>>> 0*/);
+        Log.d(DEBUG_TAG, "bytes from other: " + bytesToHex(result));
+        return result;
     }
 
     public final static int SCAN_PERIOD = 10000;
@@ -156,13 +167,13 @@ public class SumoBot {
     }
 
     private void drive() {
-
         if (connectionState == CONNECTED && writeCharacteristic != null) {
             ByteBuffer buffer = ByteBuffer.allocate(16);
             buffer.put(START);
             buffer.put(MOTOR_ID);
             buffer.put(convertInt(512));
             buffer.put(convertInt(1024));
+            buffer.put(MOTOR_PADDING);
             buffer.put(EMPTY);
             buffer.put(END);
 
