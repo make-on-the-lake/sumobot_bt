@@ -1,0 +1,153 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="SumoBot_Jr" x="0px" y="0px" width="210mm" height="297mm" viewBox="0 0 210 297">
+
+<desc>A laser cuttable robotics platform.</desc>
+<defs>
+  <ref param="wood_hug_factor" default="0"/>
+  <ref param="material_thickness" default="4.9 - wood_hug_factor"/>
+  <ref param="tab_length" default="10 - wood_hug_factor"/>
+  <ref param="servo_height" default="21"/>
+  <ref param="servo_length" default="41.05"/>
+  <ref param="battery_case_height" default="16.2"/>
+  <ref param="shovel_angle" default="68"/>
+  <ref param="shovel_height" default="49"/>
+  <ref param="shovel_width" default="110"/>
+  <ref param="tab_edge_distance" default="5"/>
+  <ref param="sled_length" default="87"/>
+  <ref param="sled_width" default="67"/>
+  <ref param="side_height" default="((material_thickness + tab_edge_distance) * 2 ) + servo_height + battery_case_height"/>
+  <ref param="shovel_ramp_length" default="side_height / Math.tan(shovel_angle * (Math.PI / 180))"/>
+  <ref param="side_length" default="shovel_ramp_length + sled_length"/>
+  <ref param="screw_radius" default="1.25"/>
+  <ref param="caster_screw_spacing" default="25"/>
+  <ref param="wheel_radius" default="36.5"/>
+  <ref param="caster_position" default="10"/>
+</defs>
+
+<g id="top" label="top" transform="translate(2,{2 + (ramp_height_at_tab = Math.cos(shovel_angle * (Math.PI / 180)) * (tab_edge_distance + material_thickness))})">
+
+  <!-- Top -->
+  <polygon fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="     {material_thickness},{-ramp_height_at_tab}     {x=sled_width+material_thickness},{-ramp_height_at_tab}     {x}, {tab_edge_distance}     {x+material_thickness}, {tab_edge_distance}     {x+material_thickness}, {tab_edge_distance+tab_length}     {x}, {tab_edge_distance+tab_length}     {x}, {y=sled_length-tab_edge_distance-tab_length}     {x+material_thickness}, {y}     {x+material_thickness}, {y+tab_length}     {x}, {y+tab_length}     {x}, {sled_length}     {material_thickness}, {sled_length}     {material_thickness}, {sled_length-tab_edge_distance}     0, {sled_length-tab_edge_distance}     0, {sled_length-tab_edge_distance-tab_length}     {material_thickness}, {sled_length-tab_edge_distance-tab_length}     {material_thickness}, {tab_edge_distance+tab_length}     0, {tab_edge_distance+tab_length}     0, {tab_edge_distance}     {material_thickness}, {tab_edge_distance}     {material_thickness},{-ramp_height_at_tab}   "/>
+
+  <!-- Arduino Uno Mount Holes -->
+  <g id="arduino_mounts" transform="translate({(sled_width/2)-(48.3/2)+material_thickness}, {sled_length - 50.8 - 14})">
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="15.2" cy="0" r="{screw_radius}"/>
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="43.1" cy="0" r="{screw_radius}"/>
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="50.8" r="{screw_radius}"/>
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="48.3" cy="52.1" r="{screw_radius}"/>
+  </g>
+
+  <!-- Up + Arrow -->
+  <g transform="translate({(sled_width/2) + material_thickness},{sled_length/2})">
+    <path d="M-0.675,2.673v2.569c0.003,0.096-0.007,0.192-0.03,0.286c-0.023,0.095-0.062,0.179-0.114,0.251s-0.122,0.132-0.209,0.177       S-1.22,6.023-1.34,6.023h-2.527c-0.146,0-0.264-0.023-0.354-0.069c-0.091-0.047-0.16-0.107-0.21-0.182       c-0.05-0.075-0.084-0.158-0.104-0.251S-4.567,5.335-4.57,5.242V2.673v2.569c0.003,0.093,0.015,0.186,0.035,0.279       s0.055,0.177,0.104,0.251c0.05,0.074,0.119,0.135,0.21,0.182C-4.131,6-4.013,6.023-3.867,6.023h2.527       c0.12,0,0.225-0.022,0.312-0.067s0.156-0.104,0.209-0.177s0.091-0.157,0.114-0.251c0.023-0.094,0.033-0.19,0.03-0.286V2.673z" stroke="#0000FF" stroke-width="0.5"/>
+    <path d="M0.735,2.678h3.229c0.078,0,0.153,0.019,0.227,0.056C4.264,2.771,4.328,2.82,4.384,2.882s0.101,0.136,0.135,0.221       C4.553,3.188,4.57,3.279,4.57,3.375v0.479c0,0.096-0.017,0.186-0.049,0.27C4.488,4.208,4.445,4.282,4.391,4.344       C4.337,4.406,4.273,4.455,4.202,4.49S4.057,4.543,3.979,4.543L1.774,4.584l2.205-0.041c0.077,0,0.151-0.018,0.223-0.053       s0.135-0.084,0.188-0.146c0.055-0.062,0.098-0.135,0.131-0.219C4.554,4.041,4.57,3.951,4.57,3.855V3.375       c0-0.096-0.018-0.187-0.052-0.272C4.484,3.018,4.439,2.944,4.384,2.882s-0.12-0.112-0.192-0.149       C4.118,2.696,4.043,2.678,3.965,2.678H0.735v3.351V2.678z" stroke="#0000FF" stroke-width="0.5"/>
+    <path d="M0,0.229v-6.258L2.831-3.35L0-6.028L-2.831-3.35L0-6.028V0.229z" stroke="#0000FF" stroke-width="0.5"/>
+  </g>
+</g>
+
+<g id="bottom" label="bottom" transform="translate(2,{sled_length+4+ramp_height_at_tab})">
+
+  <!-- Bottom -->
+
+  <polygon fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="     {material_thickness},0     {x=sled_width+material_thickness},0     {x}, {tab_edge_distance}     {x+material_thickness}, {tab_edge_distance}     {x+material_thickness}, {tab_edge_distance+tab_length}     {x}, {tab_edge_distance+tab_length}     {x}, {y = side_length - tab_edge_distance-tab_length - ramp_height_at_tab}     {x+material_thickness}, {y}     {x+material_thickness}, {y+tab_length}     {x}, {y+tab_length}     {x}, {side_length - ramp_height_at_tab}     {material_thickness}, {side_length - ramp_height_at_tab}     {material_thickness}, {y=side_length - ramp_height_at_tab - tab_edge_distance}     0, {y}     0, {y-tab_length}     {material_thickness}, {y-tab_length}     {material_thickness}, {tab_edge_distance+tab_length}     0, {tab_edge_distance+tab_length}     0, {tab_edge_distance}     {material_thickness}, {tab_edge_distance}     {material_thickness},0   "/>
+
+  <!-- Caster screw holes -->
+  <g id="caster_mounts" transform="translate({(sled_width/2) - (caster_screw_spacing/2) + material_thickness}, {tab_edge_distance + caster_position})">
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="{screw_radius}"/>
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="{caster_screw_spacing}" cy="0" r="{screw_radius}"/>
+  </g>
+
+  <!-- Motor Ziptie holes -->
+  <rect x="{material_thickness + tab_edge_distance}" y="{side_length - servo_length - tab_edge_distance - tab_length - tab_edge_distance - ramp_height_at_tab - 2.5}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
+
+  <rect x="{material_thickness + sled_width - tab_edge_distance - 5}" y="{side_length - servo_length - tab_edge_distance - tab_length - tab_edge_distance - ramp_height_at_tab - 2.5}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
+
+  <rect x="{material_thickness + tab_edge_distance}" y="{side_length - tab_edge_distance - tab_length - tab_edge_distance - ramp_height_at_tab}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
+
+  <rect x="{material_thickness + sled_width - tab_edge_distance - 5}" y="{side_length - tab_edge_distance - tab_length - tab_edge_distance - ramp_height_at_tab}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
+
+  <!-- Arrow -->
+  <path d="M0,3.129v-6.258L2.831-0.45L0-3.129L-2.831-0.45L0-3.129V3.129z" stroke="#0000FF" stroke-width="0.5" transform="translate({(sled_width/2)+material_thickness},{(side_length - ramp_height_at_tab)/2})"/>
+</g>
+
+<g id="shovel" label="shovel" transform="translate(2,{sled_length + side_length + 4 + ramp_height_at_tab})">
+  
+  <!-- Shovel -->
+  <rect x="0" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{shovel_width}" height="{shovel_height}"/>
+
+  <!-- Shovel Tabs -->
+  <rect x="{((shovel_width-sled_width)/2)-material_thickness}" y="{shovel_height/2 - tab_length/2}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{material_thickness}" height="{tab_length}"/>
+  <rect x="{((shovel_width-sled_width)/2)+sled_width}" y="{shovel_height/2 - tab_length/2}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{material_thickness}" height="{tab_length}"/>
+
+</g>
+
+<g id="right_wheel" label="wheels" transform="translate({shovel_width + wheel_radius + 4},{side_length + wheel_radius + 4}) rotate(45)">
+  <g id="wheel_template">
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="{wheel_radius}"/>
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="{screw_radius}"/>
+    <g>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="10" r="{screw_radius}"/>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="-10" r="{screw_radius}"/>
+    </g>
+    <g>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="15" r="{screw_radius}"/>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="-15" r="{screw_radius}"/>
+    </g>
+    <g>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="5" r="{screw_radius}"/>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="-5" r="{screw_radius}"/>
+    </g>
+    <g>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="16" cy="0" r="{screw_radius}"/>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="-16" cy="0" r="{screw_radius}"/>
+    </g>
+    <g>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="8" cy="0" r="{screw_radius}"/>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="-8" cy="0" r="{screw_radius}"/>
+    </g>
+  </g>
+</g>
+
+<g id="left_wheel" label="wheels" transform="translate({shovel_width + wheel_radius + 4}, {side_length + (wheel_radius*3) + 6}) rotate(-45)">
+  <use xlink:href="#wheel_template"/>
+</g>
+
+<g id="right_side" label="side" transform="translate({(material_thickness * 2) + sled_width + 4},2)">
+  <g id="side_template">
+    
+    <!-- Side -->
+    <polygon fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="    {side_height}, {side_length}    0,             {side_length}     0,             {shovel_ramp_length}    {x = (tab_offset = Math.sqrt(Math.pow(55,2) + Math.pow(20,2))-(shovel_height/2)-(tab_length/2))*Math.sin(shovel_angle*(Math.PI/180))}, {y = shovel_ramp_length - tab_offset*Math.cos(shovel_angle*(Math.PI/180))}    {x = x - material_thickness * Math.sin((90-shovel_angle)*(Math.PI/180))}, {y = y - material_thickness * Math.cos((90-shovel_angle)*(Math.PI/180))}    {x = x + tab_length * Math.sin(shovel_angle*(Math.PI/180))}, {y = y - tab_length * Math.cos(shovel_angle*(Math.PI/180))}    {x + material_thickness * Math.sin((90-shovel_angle)*(Math.PI/180))}, {y + material_thickness * Math.cos((90-shovel_angle)*(Math.PI/180))}    {side_height}, 0    {side_height}, {side_length} "/>
+
+    <!-- Motor Hole -->
+    <rect x="{motor_x = side_height - servo_height - material_thickness - tab_edge_distance}" y="{motor_y = side_length - servo_length - tab_edge_distance - tab_length - tab_edge_distance}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{servo_height}" height="{servo_length}"/>
+ 
+    <!-- Motor Screws -->
+    <g transform="translate({(servo_height/2) - 5 + motor_x}, {motor_y - 5})">
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="{screw_radius}"/>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="10" cy="0" r="{screw_radius}"/>
+    </g>
+
+    <g transform="translate({(servo_height/2) - 5 + motor_x}, {motor_y + 5 + servo_length})">
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="{screw_radius}"/>
+      <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="10" cy="0" r="{screw_radius}"/>
+    </g>
+
+    <!-- Wire Holes -->
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="{motor_x + (servo_height/2)}" cy="{motor_y + servo_length}" r="3.5"/>
+
+    <!-- Tab Holes -->
+    <rect x="{tab_edge_distance}" y="{tab_edge_distance + shovel_ramp_length}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{material_thickness}" height="{tab_length}"/>
+
+    <rect x="{tab_edge_distance}" y="{side_length - tab_length - tab_edge_distance}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{material_thickness}" height="{tab_length}"/>
+
+    <rect x="{side_height - tab_edge_distance - material_thickness}" y="{ramp_height_at_tab + tab_edge_distance}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{material_thickness}" height="{tab_length}"/>
+
+    <rect x="{side_height - tab_edge_distance - material_thickness}" y="{side_length - tab_length - tab_edge_distance}" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="{material_thickness}" height="{tab_length}"/>
+
+  </g>
+</g>
+
+<g id="left_side">
+  <use x="{side_height + 2}" y="0" xlink:href="#side_template" transform="scale(-1,1) translate({(side_height * -2) - 2 - (material_thickness * 2) - sled_width - 4 - side_height - 2} ,2)"/>
+</g>
+
+</svg>
