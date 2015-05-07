@@ -188,6 +188,9 @@ public class MainActivity extends Activity implements SumoBotConnectionListener 
 
         @Override
         public void onClick(View view) {
+            if (!editBotNameTextView.getText().toString().isEmpty()) {
+                saveName();
+            }
             editBotNameTextView.setText("");
             showRunState();
         }

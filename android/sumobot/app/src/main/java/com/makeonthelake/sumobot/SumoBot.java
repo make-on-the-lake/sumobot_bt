@@ -24,7 +24,6 @@ public class SumoBot {
         String[] bites = hexString.split("0x");
         byte[] data = new byte[bites.length];
         for (int i = 0; i < data.length; i++) {
-            Log.d(DEBUG_TAG, bites[i]);
             if (!bites[i].isEmpty()) {
                 data[i] = (byte) (Integer.parseInt(bites[i].toLowerCase(), 16) & 0xff);
             }
@@ -44,20 +43,6 @@ public class SumoBot {
             hexChars[j * 2 + 1] = hexArray[v & 0x0F];
         }
         return new String(hexChars);
-    }
-
-    public static byte[] convertInt(int value) {
-        Log.d(DEBUG_TAG, "int value to convert: " + value);
-        byte[] converted = ByteBuffer.allocate(4).putInt(value).array();
-        Log.d(DEBUG_TAG, "bytes from buffer: " + bytesToHex(converted));
-        byte[] result = new byte[4];
-
-        result[0] = (byte) (value >>> 24);
-        result[1] = (byte) (value >>> 16);
-        result[2] = (byte) (value >>> 8);
-        result[3] = (byte) (value /*>>> 0*/);
-        Log.d(DEBUG_TAG, "bytes from other: " + bytesToHex(result));
-        return result;
     }
 
     public final static int SCAN_PERIOD = 10000;
@@ -105,6 +90,7 @@ public class SumoBot {
             super.onConnectionStateChange(gatt, status, newState);
 
             if (newState == BluetoothProfile.STATE_CONNECTED) {
+                bluetoothAdapter.stopLeScan(btleScanCallback);
                 setupConnection(gatt);
             } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
                 connectionState = DISCONNECTED;
@@ -124,11 +110,13 @@ public class SumoBot {
                     bluetoothGattService = service;
                     connectionState = CONNECTED;
                     sumoBotConnectionListener.onSumoBotConnected();
-                    Log.d(DEBUG_TAG, "Found Service: " + service.getUuid().toString());
+                    Log.d(DEBUG_TAG, "Saving Service: " + service.getUuid().toString());
                     for (BluetoothGattCharacteristic characteristic : service.getCharacteristics()) {
+                        Log.d(DEBUG_TAG, "Found characeristic: " + characteristic.getUuid().toString());
                         if (characteristic.getUuid().toString().contains(WRITE_ID)) {
-                            Log.d(DEBUG_TAG, "Found characeristic: " + characteristic.getUuid().toString());
+                            Log.d(DEBUG_TAG, "Saving characeristic: " + characteristic.getUuid().toString());
                             writeCharacteristic = characteristic;
+                            bluetoothGatt.setCharacteristicNotification(writeCharacteristic, true);
                             drive();
                         }
                     }
@@ -161,29 +149,31 @@ public class SumoBot {
     private void setupConnection(BluetoothGatt gatt) {
         bluetoothGatt = gatt;
         Log.i(DEBUG_TAG, "Connected to GATT server.");
-        Log.i(DEBUG_TAG, "Attempting to start service discovery:" + bluetoothGatt.discoverServices());
+        Log.i(DEBUG_TAG, "Attempting to start service discovery:");
         bluetoothGatt.discoverServices();
-
     }
 
     private void drive() {
+        Log.d(DEBUG_TAG, "has property write? " + (writeCharacteristic.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE));
+        Log.d(DEBUG_TAG, "has property write no response? " + (writeCharacteristic.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE));
+        Log.d(DEBUG_TAG, "has permissions? " + (writeCharacteristic.getPermissions()));
+
         if (connectionState == CONNECTED && writeCharacteristic != null) {
             ByteBuffer buffer = ByteBuffer.allocate(16);
             buffer.put(START);
             buffer.put(MOTOR_ID);
-            buffer.put(convertInt(512));
-            buffer.put(convertInt(1024));
+            buffer.putInt(512);
+            buffer.putInt(1024);
             buffer.put(MOTOR_PADDING);
             buffer.put(EMPTY);
             buffer.put(END);
 
             byte[] command = buffer.array();
-            Log.i(DEBUG_TAG, "Drive Command Len: " + command.length);
-            Log.i(DEBUG_TAG, "Drive Command:" + bytesToHex(command));
-
-
+            writeCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
             writeCharacteristic.setValue(command);
-            bluetoothGatt.writeCharacteristic(writeCharacteristic);
+            if (!bluetoothGatt.writeCharacteristic(writeCharacteristic)) {
+                Log.e(DEBUG_TAG, "write was not issued correctly");
+            }
             driveHandler.postDelayed(driveRunable, 100);
         }
     }
