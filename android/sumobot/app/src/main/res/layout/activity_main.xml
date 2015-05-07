@@ -102,29 +102,39 @@
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
                 android:textColor="@android:color/white" />
 
-            <TextView
-                android:id="@+id/connection_status"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_toLeftOf="@+id/settings_icon"
-                android:text="CONNECTED"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
-
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginLeft="30dp"
-                android:background="@android:color/white" />
+                android:layout_height="wrap_content">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="5dp"
-                android:background="@android:color/white" />
+                <TextView
+                    android:id="@+id/connection_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/long_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@+id/connection_status"
+                    android:layout_below="@+id/connection_status"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/short_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@+id/connection_status"
+                    android:layout_below="@+id/long_line"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white" />
+            </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout

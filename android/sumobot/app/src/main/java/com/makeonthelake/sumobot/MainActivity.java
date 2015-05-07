@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -14,12 +15,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements SumoBotConnectionListener {
 
+    private static final String DEBUG_TAG = MainActivity.class.getName();
     private static final String PREF_KEY = "SUMO_BOT_PREFS";
     private static final int REQUEST_ENABLE_BT = 10001;
 
     TextView botNameView;
+    TextView connectionStatusView;
     View runState;
     View configureState;
     EditText editBotNameTextView;
@@ -27,6 +30,48 @@ public class MainActivity extends Activity {
     View settingsButton;
     View blutoothButton;
     String botName;
+    SumoBot sumoBot;
+
+    @Override
+    public void onSumoBotScanStarted() {
+        Log.d(DEBUG_TAG, "Scan for sumobot has started");
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                connectionStatusView.setText("SCANNING...");
+            }
+        });
+    }
+
+    @Override
+    public void onSumoBotConnected() {
+
+        Log.d(DEBUG_TAG, "Connected to SumoBot");
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                connectionStatusView.setText("CONNECTED");
+            }
+        });
+    }
+
+    @Override
+    public void onSumoBotDisconnected() {
+        Log.d(DEBUG_TAG, "Disconnected from SumoBot");
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                connectionStatusView.setText("DISCONNECTED");
+            }
+        });
+
+    }
+
+    @Override
+    public void onSumoBotRequestsBluetoothEnabled() {
+        Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+        startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +87,8 @@ public class MainActivity extends Activity {
         settingsButton = findViewById(R.id.settings);
         settingsButton.setOnClickListener(new SettingsButtonOnClickListener());
         blutoothButton = findViewById(R.id.bluetooth);
+        connectionStatusView = (TextView) findViewById(R.id.connection_status);
+        sumoBot = new SumoBot(getApplicationContext(), BluetoothAdapter.getDefaultAdapter(), this);
         setupEditBotNameEditor();
     }
 
@@ -51,7 +98,14 @@ public class MainActivity extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(PREF_KEY, 0);
         botName = sharedPreferences.getString(getString(R.string.pref_name_key), "");
         connectToBot(botName);
+    }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (sumoBot.connected()) {
+            sumoBot.disConnect();
+        }
     }
 
     @Override
@@ -64,13 +118,14 @@ public class MainActivity extends Activity {
     }
 
     private void connectToBot(String botName) {
+        if (sumoBot.connected()) {
+            sumoBot.disConnect();
+        }
+
         if (hasBotName(botName)) {
+            sumoBot.setName(botName);
             botNameView.setText(botName);
-            BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-            if (!mBluetoothAdapter.isEnabled()) {
-                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
-            }
+            sumoBot.connect();
         } else {
             botNameView.setText(getString(R.string.empty_bot_name_message));
             showConfigurationState();
@@ -101,7 +156,7 @@ public class MainActivity extends Activity {
         InputMethodManager imm = (InputMethodManager) getSystemService(
                 Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(editBotNameTextView.getWindowToken(), 0);
-        showRunState();;
+        showRunState();
         connectToBot(botName);
     }
 
@@ -110,6 +165,7 @@ public class MainActivity extends Activity {
         editor.putString(getString(R.string.pref_name_key), botName);
         editor.commit();
     }
+
 
     private void showConfigurationState() {
         configureState.setVisibility(View.VISIBLE);
@@ -132,6 +188,9 @@ public class MainActivity extends Activity {
 
         @Override
         public void onClick(View view) {
+            if (!editBotNameTextView.getText().toString().isEmpty()) {
+                saveName();
+            }
             editBotNameTextView.setText("");
             showRunState();
         }
