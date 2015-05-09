@@ -1,10 +1,10 @@
-<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" preserveAspectRatio="xMinYMin" style="cursor:pointer;"><desc>A laser cuttable robotics platform.</desc><g id="top" label="top" transform="translate(2,3.5637018398907085)">
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" preserveAspectRatio="xMinYMin" style="cursor:pointer;"><desc>A laser cuttable robotics platform.</desc><g id="top" label="top" transform="translate(2,5.708605274817529)">
 
   
-  <path fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="     4.005000000000001,-1.5637018398907085     64.005,-1.5637018398907085     64.005, 5     68.00999999999999, 5     68.00999999999999, 14.775     64.005, 14.775     64.005, 60.225     68.00999999999999, 60.225     68.00999999999999, 70     64.005, 70     64.005, 75     4.005000000000001, 75     4.005000000000001, 70     0, 70     0, 60.225     4.005000000000001, 60.225     4.005000000000001, 14.775     0, 14.775     0, 5     4.005000000000001, 5     4.005000000000001,-1.5637018398907085   " d="M     4.005000000000001,-1.5637018398907085     64.005,-1.5637018398907085     64.005, 5     68.00999999999999, 5     68.00999999999999, 14.775     64.005, 14.775     64.005, 60.225     68.00999999999999, 60.225     68.00999999999999, 70     64.005, 70     64.005, 75     4.005000000000001, 75     4.005000000000001, 70     0, 70     0, 60.225     4.005000000000001, 60.225     4.005000000000001, 14.775     0, 14.775     0, 5     4.005000000000001, 5     4.005000000000001,-1.5637018398907085    "/>
+  <path fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="     4.9,-3.7086052748175287     71.9,-3.7086052748175287     71.9, 5     76.80000000000001, 5     76.80000000000001, 15     71.9, 15     71.9, 72     76.80000000000001, 72     76.80000000000001, 82     71.9, 82     71.9, 87     4.9, 87     4.9, 82     0, 82     0, 72     4.9, 72     4.9, 15     0, 15     0, 5     4.9, 5     4.9,-3.7086052748175287   " d="M     4.9,-3.7086052748175287     71.9,-3.7086052748175287     71.9, 5     76.80000000000001, 5     76.80000000000001, 15     71.9, 15     71.9, 72     76.80000000000001, 72     76.80000000000001, 82     71.9, 82     71.9, 87     4.9, 87     4.9, 82     0, 82     0, 72     4.9, 72     4.9, 15     0, 15     0, 5     4.9, 5     4.9,-3.7086052748175287    "/>
 
   
-  <g id="arduino_mounts" transform="translate(9.855000000000002, 10.200000000000003)">
+  <g id="arduino_mounts" transform="translate(14.250000000000002, 22.200000000000003)">
     <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="15.2" cy="0" r="1.25"/>
     <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="43.1" cy="0" r="1.25"/>
     <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="50.8" r="1.25"/>
@@ -12,65 +12,46 @@
   </g>
 
   
-  <g transform="translate(34.005,37.5)">
+  <g transform="translate(38.4,43.5)">
     <path d="M-0.675,2.673v2.569c0.003,0.096-0.007,0.192-0.03,0.286c-0.023,0.095-0.062,0.179-0.114,0.251s-0.122,0.132-0.209,0.177       S-1.22,6.023-1.34,6.023h-2.527c-0.146,0-0.264-0.023-0.354-0.069c-0.091-0.047-0.16-0.107-0.21-0.182       c-0.05-0.075-0.084-0.158-0.104-0.251S-4.567,5.335-4.57,5.242V2.673v2.569c0.003,0.093,0.015,0.186,0.035,0.279       s0.055,0.177,0.104,0.251c0.05,0.074,0.119,0.135,0.21,0.182C-4.131,6-4.013,6.023-3.867,6.023h2.527       c0.12,0,0.225-0.022,0.312-0.067s0.156-0.104,0.209-0.177s0.091-0.157,0.114-0.251c0.023-0.094,0.033-0.19,0.03-0.286V2.673z" stroke="#0000FF" stroke-width="0.5"/>
     <path d="M0.735,2.678h3.229c0.078,0,0.153,0.019,0.227,0.056C4.264,2.771,4.328,2.82,4.384,2.882s0.101,0.136,0.135,0.221       C4.553,3.188,4.57,3.279,4.57,3.375v0.479c0,0.096-0.017,0.186-0.049,0.27C4.488,4.208,4.445,4.282,4.391,4.344       C4.337,4.406,4.273,4.455,4.202,4.49S4.057,4.543,3.979,4.543L1.774,4.584l2.205-0.041c0.077,0,0.151-0.018,0.223-0.053       s0.135-0.084,0.188-0.146c0.055-0.062,0.098-0.135,0.131-0.219C4.554,4.041,4.57,3.951,4.57,3.855V3.375       c0-0.096-0.018-0.187-0.052-0.272C4.484,3.018,4.439,2.944,4.384,2.882s-0.12-0.112-0.192-0.149       C4.118,2.696,4.043,2.678,3.965,2.678H0.735v3.351V2.678z" stroke="#0000FF" stroke-width="0.5"/>
     <path d="M0,0.229v-6.258L2.831-3.35L0-6.028L-2.831-3.35L0-6.028V0.229z" stroke="#0000FF" stroke-width="0.5"/>
   </g>
-</g><g id="bottom" label="bottom" transform="translate(2,80.56370183989071)">
+</g><g id="bottom" label="bottom" transform="translate(2,94.70860527481753)">
 
   
 
-  <path fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="     4.005000000000001,0     64.005,0     64.005, 5     68.00999999999999, 5     68.00999999999999, 14.775     64.005, 14.775     64.005, 68.18471838817348     68.00999999999999, 68.18471838817348     68.00999999999999, 77.95971838817348     64.005, 77.95971838817348     64.005, 82.95971838817348     4.005000000000001, 82.95971838817348     4.005000000000001, 77.95971838817348     0, 77.95971838817348     0, 68.18471838817348     4.005000000000001, 68.18471838817348     4.005000000000001, 14.775     0, 14.775     0, 5     4.005000000000001, 5     4.005000000000001,0   " d="M     4.005000000000001,0     64.005,0     64.005, 5     68.00999999999999, 5     68.00999999999999, 14.775     64.005, 14.775     64.005, 68.18471838817348     68.00999999999999, 68.18471838817348     68.00999999999999, 77.95971838817348     64.005, 77.95971838817348     64.005, 82.95971838817348     4.005000000000001, 82.95971838817348     4.005000000000001, 77.95971838817348     0, 77.95971838817348     0, 68.18471838817348     4.005000000000001, 68.18471838817348     4.005000000000001, 14.775     0, 14.775     0, 5     4.005000000000001, 5     4.005000000000001,0    "/>
+  <path fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="     4.9,0     71.9,0     71.9, 5     76.80000000000001, 5     76.80000000000001, 15     71.9, 15     71.9, 91.3208895977864     76.80000000000001, 91.3208895977864     76.80000000000001, 101.3208895977864     71.9, 101.3208895977864     71.9, 106.3208895977864     4.9, 106.3208895977864     4.9, 101.3208895977864     0, 101.3208895977864     0, 91.3208895977864     4.9, 91.3208895977864     4.9, 15     0, 15     0, 5     4.9, 5     4.9,0   " d="M     4.9,0     71.9,0     71.9, 5     76.80000000000001, 5     76.80000000000001, 15     71.9, 15     71.9, 91.3208895977864     76.80000000000001, 91.3208895977864     76.80000000000001, 101.3208895977864     71.9, 101.3208895977864     71.9, 106.3208895977864     4.9, 106.3208895977864     4.9, 101.3208895977864     0, 101.3208895977864     0, 91.3208895977864     4.9, 91.3208895977864     4.9, 15     0, 15     0, 5     4.9, 5     4.9,0    "/>
 
   
-  <g id="caster_mounts" transform="translate(21.505000000000003, 15)">
+  <g id="caster_mounts" transform="translate(25.9, 15)">
     <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="1.25"/>
     <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="25" cy="0" r="1.25"/>
   </g>
 
   
-  <rect x="9.005" y="19.634718388173493" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
+  <rect x="9.9" y="42.77088959778641" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
 
-  <rect x="54.004999999999995" y="19.634718388173493" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
+  <rect x="61.900000000000006" y="42.77088959778641" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
 
-  <rect x="9.005" y="63.18471838817348" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
+  <rect x="9.9" y="86.3208895977864" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
 
-  <rect x="54.004999999999995" y="63.18471838817348" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
-
-  
-  <path d="M0,3.129v-6.258L2.831-0.45L0-3.129L-2.831-0.45L0-3.129V3.129z" stroke="#0000FF" stroke-width="0.5" transform="translate(34.005,41.47985919408674)"/>
-</g><g id="shovel" label="shovel" transform="translate(2,165.0871220679549)">
-  
-  
-  <rect x="0" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="105" height="45"/>
+  <rect x="61.900000000000006" y="86.3208895977864" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="5" height="2.5"/>
 
   
-  <rect x="18.494999999999997" y="17.6125" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.005000000000001" height="9.775"/>
-  <rect x="82.5" y="17.6125" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.005000000000001" height="9.775"/>
+  <path d="M0,3.129v-6.258L2.831-0.45L0-3.129L-2.831-0.45L0-3.129V3.129z" stroke="#0000FF" stroke-width="0.5" transform="translate(38.4,53.1604447988932)"/>
+</g><g id="shovel" label="shovel" transform="translate(2,204.73810014742148)">
+  
+  
+  <rect x="0" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="110" height="49"/>
 
   
-  <g id="grill" transform="translate(31.25, 5)">
-    <rect x="0" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="5" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="10" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="15" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="20" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="25" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="30" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="35" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-    <rect x="40" y="0" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="2.5" height="35" rx="1.25" ry="1.25"/>
-  </g>
+  <rect x="16.6" y="19.5" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.9" height="10"/>
+  <rect x="88.5" y="19.5" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.9" height="10"/>
 
-  <g transform="translate(9.8875, 9.8875)">
-    <path fill="none" id="accessory_hole" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="       -4.8875, -2.0025000000000004       -2.0025000000000004, -2.0025000000000004       -2.0025000000000004, -4.8875       2.0025000000000004, -4.8875       2.0025000000000004, -2.0025000000000004       4.8875, -2.0025000000000004       4.8875, 2.0025000000000004       2.0025000000000004, 2.0025000000000004       2.0025000000000004, 4.8875       -2.0025000000000004, 4.8875       -2.0025000000000004, 2.0025000000000004       -4.8875, 2.0025000000000004       -4.8875, -2.0025000000000004     " d="M       -4.8875, -2.0025000000000004       -2.0025000000000004, -2.0025000000000004       -2.0025000000000004, -4.8875       2.0025000000000004, -4.8875       2.0025000000000004, -2.0025000000000004       4.8875, -2.0025000000000004       4.8875, 2.0025000000000004       2.0025000000000004, 2.0025000000000004       2.0025000000000004, 4.8875       -2.0025000000000004, 4.8875       -2.0025000000000004, 2.0025000000000004       -4.8875, 2.0025000000000004       -4.8875, -2.0025000000000004      "/>
-  </g>
-
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#accessory_hole" transform="translate(95.1125, 9.8875)"/>
-
-</g><g id="right_wheel" label="wheels" transform="translate(144,123.5234202280642) rotate(45)">
+</g><g id="right_wheel" label="wheels" transform="translate(150.5,150.52949487260395) rotate(45)">
   <g id="wheel_template">
-    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="35"/>
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="36.5"/>
     <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="1.25"/>
     <g>
       <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="10" r="1.25"/>
@@ -93,44 +74,41 @@
       <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="-8" cy="0" r="1.25"/>
     </g>
   </g>
-</g><g id="left_wheel" label="wheels" transform="translate(144, 195.5234202280642) rotate(-45)">
+</g><g id="left_wheel" label="wheels" transform="translate(150.5, 225.52949487260395) rotate(-45)">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wheel_template"/>
-</g><g id="right_side" label="side" transform="translate(72.01,2)">
+</g><g id="right_side" label="side" transform="translate(80.8,2)">
   <g id="side_template">
     
     
-    <path fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="    54.010000000000005, 84.5234202280642    0,             84.5234202280642     0,             9.523420228064198    30.662973758168086, 4.116710645743525    29.967512806612028, 0.1725555949296309    39.59400859230636, -1.524855341764614    40.28946954386242, 2.41929970904928    54.010000000000005, 0    54.010000000000005, 84.5234202280642 " d="M    54.010000000000005, 84.5234202280642    0,             84.5234202280642     0,             9.523420228064198    30.662973758168086, 4.116710645743525    29.967512806612028, 0.1725555949296309    39.59400859230636, -1.524855341764614    40.28946954386242, 2.41929970904928    54.010000000000005, 0    54.010000000000005, 84.5234202280642  "/>
+    <path fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" points="    57, 110.02949487260393    0,             110.02949487260393     0,             23.029494872603934    26.910120189122548, 12.157100575822298    25.07454788138458, 7.61389968844504    34.34638642705245, 3.86783375428592    36.18195873479042, 8.411034641663178    57, 0    57, 110.02949487260393 " d="M    57, 110.02949487260393    0,             110.02949487260393     0,             23.029494872603934    26.910120189122548, 12.157100575822298    25.07454788138458, 7.61389968844504    34.34638642705245, 3.86783375428592    36.18195873479042, 8.411034641663178    57, 0    57, 110.02949487260393  "/>
 
     
-    <rect x="24.005000000000003" y="23.6984202280642" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="21" height="41.05"/>
+    <rect x="26.1" y="48.97949487260394" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="21" height="41.05"/>
  
     
-    <g transform="translate(29.505000000000003, 18.6984202280642)">
+    <g transform="translate(31.6, 43.97949487260394)">
       <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="1.25"/>
       <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="10" cy="0" r="1.25"/>
     </g>
 
-    <g transform="translate(29.505000000000003, 69.74842022806419)">
+    <g transform="translate(31.6, 95.02949487260393)">
       <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="0" cy="0" r="1.25"/>
       <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="10" cy="0" r="1.25"/>
     </g>
 
     
-    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="34.505" cy="64.74842022806419" r="3.5"/>
+    <circle fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" cx="36.6" cy="90.02949487260393" r="3.5"/>
 
     
-    <rect x="5" y="14.523420228064198" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.005000000000001" height="9.775"/>
+    <rect x="5" y="28.029494872603934" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.9" height="10"/>
 
-    <rect x="5" y="69.74842022806419" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.005000000000001" height="9.775"/>
+    <rect x="5" y="95.02949487260393" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.9" height="10"/>
 
-    <rect x="45.005" y="6.563701839890708" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.005000000000001" height="9.775"/>
+    <rect x="47.1" y="8.708605274817529" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.9" height="10"/>
 
-    <rect x="45.005" y="69.74842022806419" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.005000000000001" height="9.775"/>
-
-    
-    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#accessory_hole" transform="translate(18.892500000000002, 16.079662745029523)"/>
+    <rect x="47.1" y="95.02949487260393" fill="none" stroke="#0000FF" stroke-width="0.5" stroke-miterlimit="10" width="4.9" height="10"/>
 
   </g>
 </g><g id="left_side">
-  <use x="56.010000000000005" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#side_template" transform="scale(-1,1) translate(-238.04000000000002 ,2)"/>
+  <use x="59" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#side_template" transform="scale(-1,1) translate(-255.8 ,2)"/>
 </g></svg>

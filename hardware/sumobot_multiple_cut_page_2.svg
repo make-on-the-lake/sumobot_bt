@@ -1,0 +1,2923 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24in"
+   height="12in"
+   viewBox="0 0 2160.0001 1080"
+   id="svg5348"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="sumobot_multiple_cut_page_2.svg">
+  <defs
+     id="defs5350" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.51203704"
+     inkscape:cx="1064.4402"
+     inkscape:cy="528.95352"
+     inkscape:document-units="px"
+     inkscape:current-layer="g5741"
+     showgrid="false"
+     units="in"
+     width="24in"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5353">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,27.63783)">
+    <g
+       id="g5741"
+       transform="matrix(3.5433071,0,0,3.5433071,425.0828,-284.26784)">
+      <g
+         transform="translate(69.511112,13.288889)"
+         label="side"
+         id="right_side" />
+      <g
+         id="g6066"
+         label="wheels"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,65.238272,124.57255)">
+        <g
+           id="use6068">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8888" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8890" />
+          <g
+             id="g8892">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8894" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8896" />
+          </g>
+          <g
+             id="g8898">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8900" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8902" />
+          </g>
+          <g
+             id="g8904">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8906" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8908" />
+          </g>
+          <g
+             id="g8910">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8912" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8914" />
+          </g>
+          <g
+             id="g8916">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8918" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8920" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,27.837954,188.9934)"
+         label="wheels"
+         id="g6070">
+        <g
+           id="g6072">
+          <circle
+             id="circle6074"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle6076"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g6078">
+            <circle
+               id="circle6080"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle6082"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g6084">
+            <circle
+               id="circle6086"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle6088"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g6090">
+            <circle
+               id="circle6092"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle6094"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g6096">
+            <circle
+               id="circle6098"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle6100"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g6102">
+            <circle
+               id="circle6104"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle6106"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,65.238272,253.27907)"
+         label="wheels"
+         id="g6146">
+        <g
+           id="use6148">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8924" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8926" />
+          <g
+             id="g8928">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8930" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8932" />
+          </g>
+          <g
+             id="g8934">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8936" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8938" />
+          </g>
+          <g
+             id="g8940">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8942" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8944" />
+          </g>
+          <g
+             id="g8946">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8948" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8950" />
+          </g>
+          <g
+             id="g8952">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8954" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8956" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g6150"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,27.837954,317.69992)">
+        <g
+           id="g6152">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle6154" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle6156" />
+          <g
+             id="g6158">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle6160" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle6162" />
+          </g>
+          <g
+             id="g6164">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle6166" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle6168" />
+          </g>
+          <g
+             id="g6170">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle6172" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle6174" />
+          </g>
+          <g
+             id="g6176">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle6178" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle6180" />
+          </g>
+          <g
+             id="g6182">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle6184" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle6186" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8018"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,139.07332,123.78727)">
+        <g
+           id="g8020">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8022" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8024" />
+          <g
+             id="g8026">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8028" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8030" />
+          </g>
+          <g
+             id="g8032">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8034" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8036" />
+          </g>
+          <g
+             id="g8038">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8040" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8042" />
+          </g>
+          <g
+             id="g8044">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8046" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8048" />
+          </g>
+          <g
+             id="g8050">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8052" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8054" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8056"
+         label="wheels"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,175.86939,188.35473)">
+        <g
+           id="use8058">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8960" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8962" />
+          <g
+             id="g8964">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8966" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8968" />
+          </g>
+          <g
+             id="g8970">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8972" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8974" />
+          </g>
+          <g
+             id="g8976">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8978" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8980" />
+          </g>
+          <g
+             id="g8982">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8984" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8986" />
+          </g>
+          <g
+             id="g8988">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8990" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8992" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8060"
+         label="side"
+         transform="translate(291.33776,13.288889)" />
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,138.46907,252.77558)"
+         label="wheels"
+         id="g8062">
+        <g
+           id="g8064">
+          <circle
+             id="circle8066"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle8068"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g8070">
+            <circle
+               id="circle8072"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8074"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8076">
+            <circle
+               id="circle8078"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8080"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8082">
+            <circle
+               id="circle8084"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8086"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8088">
+            <circle
+               id="circle8090"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8092"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8094">
+            <circle
+               id="circle8096"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8098"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8100"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,101.60666,188.28806)">
+        <g
+           id="g8102">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8104" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8106" />
+          <g
+             id="g8108">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8110" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8112" />
+          </g>
+          <g
+             id="g8114">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8116" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8118" />
+          </g>
+          <g
+             id="g8120">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8122" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8124" />
+          </g>
+          <g
+             id="g8126">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8128" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8130" />
+          </g>
+          <g
+             id="g8132">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8134" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8136" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,175.86939,317.06125)"
+         label="wheels"
+         id="g8138">
+        <g
+           id="use8140">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8996" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8998" />
+          <g
+             id="g9000">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle9002" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle9004" />
+          </g>
+          <g
+             id="g9006">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle9008" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle9010" />
+          </g>
+          <g
+             id="g9012">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle9014" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle9016" />
+          </g>
+          <g
+             id="g9018">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle9020" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle9022" />
+          </g>
+          <g
+             id="g9024">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle9026" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle9028" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,101.60666,316.99458)"
+         label="wheels"
+         id="g8180">
+        <g
+           id="g8182">
+          <circle
+             id="circle8184"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle8186"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g8188">
+            <circle
+               id="circle8190"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8192"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8194">
+            <circle
+               id="circle8196"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8198"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8200">
+            <circle
+               id="circle8202"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8204"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8206">
+            <circle
+               id="circle8208"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8210"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8212">
+            <circle
+               id="circle8214"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8216"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,287.06494,124.57255)"
+         label="wheels"
+         id="g8256">
+        <g
+           id="use8258">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle9104" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle9106" />
+          <g
+             id="g9108">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle9110" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle9112" />
+          </g>
+          <g
+             id="g9114">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle9116" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle9118" />
+          </g>
+          <g
+             id="g9120">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle9122" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle9124" />
+          </g>
+          <g
+             id="g9126">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle9128" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle9130" />
+          </g>
+          <g
+             id="g9132">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle9134" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle9136" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8260"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,249.66463,188.9934)">
+        <g
+           id="g8262">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8264" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8266" />
+          <g
+             id="g8268">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8270" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8272" />
+          </g>
+          <g
+             id="g8274">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8276" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8278" />
+          </g>
+          <g
+             id="g8280">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8282" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8284" />
+          </g>
+          <g
+             id="g8286">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8288" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8290" />
+          </g>
+          <g
+             id="g8292">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8294" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8296" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,212.80221,124.50588)"
+         label="wheels"
+         id="g8298">
+        <g
+           id="g8300">
+          <circle
+             id="circle8302"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle8304"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g8306">
+            <circle
+               id="circle8308"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8310"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8312">
+            <circle
+               id="circle8314"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8316"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8318">
+            <circle
+               id="circle8320"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8322"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8324">
+            <circle
+               id="circle8326"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8328"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8330">
+            <circle
+               id="circle8332"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8334"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8336"
+         label="wheels"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,287.06494,252.72789)">
+        <g
+           id="use8338">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle9140" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle9142" />
+          <g
+             id="g9144">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle9146" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle9148" />
+          </g>
+          <g
+             id="g9150">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle9152" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle9154" />
+          </g>
+          <g
+             id="g9156">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle9158" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle9160" />
+          </g>
+          <g
+             id="g9162">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle9164" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle9166" />
+          </g>
+          <g
+             id="g9168">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle9170" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle9172" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,249.66463,317.69992)"
+         label="wheels"
+         id="g8340">
+        <g
+           id="g8342">
+          <circle
+             id="circle8344"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle8346"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g8348">
+            <circle
+               id="circle8350"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8352"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8354">
+            <circle
+               id="circle8356"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8358"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8360">
+            <circle
+               id="circle8362"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8364"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8366">
+            <circle
+               id="circle8368"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8370"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8372">
+            <circle
+               id="circle8374"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8376"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8378"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,212.80221,253.2124)">
+        <g
+           id="g8380">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8382" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8384" />
+          <g
+             id="g8386">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8388" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8390" />
+          </g>
+          <g
+             id="g8392">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8394" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8396" />
+          </g>
+          <g
+             id="g8398">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8400" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8402" />
+          </g>
+          <g
+             id="g8404">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8406" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8408" />
+          </g>
+          <g
+             id="g8410">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8412" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8414" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,361.46442,123.78727)"
+         label="wheels"
+         id="g8416">
+        <g
+           id="g8418">
+          <circle
+             id="circle8420"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle8422"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g8424">
+            <circle
+               id="circle8426"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8428"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8430">
+            <circle
+               id="circle8432"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8434"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8436">
+            <circle
+               id="circle8438"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8440"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8442">
+            <circle
+               id="circle8444"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8446"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8448">
+            <circle
+               id="circle8450"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8452"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,398.26049,188.35473)"
+         label="wheels"
+         id="g8454">
+        <g
+           id="use8456">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle9032" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle9034" />
+          <g
+             id="g9036">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle9038" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle9040" />
+          </g>
+          <g
+             id="g9042">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle9044" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle9046" />
+          </g>
+          <g
+             id="g9048">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle9050" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle9052" />
+          </g>
+          <g
+             id="g9054">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle9056" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle9058" />
+          </g>
+          <g
+             id="g9060">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle9062" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle9064" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="translate(513.72886,13.288889)"
+         label="side"
+         id="g8458" />
+      <g
+         id="g8460"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,360.86017,252.77558)">
+        <g
+           id="g8462">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8464" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8466" />
+          <g
+             id="g8468">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8470" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8472" />
+          </g>
+          <g
+             id="g8474">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8476" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8478" />
+          </g>
+          <g
+             id="g8480">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8482" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8484" />
+          </g>
+          <g
+             id="g8486">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8488" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8490" />
+          </g>
+          <g
+             id="g8492">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8494" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8496" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,323.99776,188.28806)"
+         label="wheels"
+         id="g8498">
+        <g
+           id="g8500">
+          <circle
+             id="circle8502"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle8504"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g8506">
+            <circle
+               id="circle8508"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8510"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8512">
+            <circle
+               id="circle8514"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8516"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8518">
+            <circle
+               id="circle8520"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8522"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8524">
+            <circle
+               id="circle8526"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8528"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8530">
+            <circle
+               id="circle8532"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8534"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8536"
+         label="wheels"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,398.26049,317.06125)">
+        <g
+           id="use8538">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle9068" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle9070" />
+          <g
+             id="g9072">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle9074" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle9076" />
+          </g>
+          <g
+             id="g9078">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle9080" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle9082" />
+          </g>
+          <g
+             id="g9084">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle9086" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle9088" />
+          </g>
+          <g
+             id="g9090">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle9092" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle9094" />
+          </g>
+          <g
+             id="g9096">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle9098" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle9100" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8578"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,323.99776,316.99458)">
+        <g
+           id="g8580">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8582" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8584" />
+          <g
+             id="g8586">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8588" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8590" />
+          </g>
+          <g
+             id="g8592">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8594" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8596" />
+          </g>
+          <g
+             id="g8598">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8600" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8602" />
+          </g>
+          <g
+             id="g8604">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8606" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8608" />
+          </g>
+          <g
+             id="g8610">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8612" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8614" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8696"
+         label="wheels"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,435.19331,124.50588)">
+        <g
+           id="g8698">
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="36.5"
+             id="circle8700" />
+          <circle
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             stroke-miterlimit="10"
+             cx="0"
+             cy="0"
+             r="1.25"
+             id="circle8702" />
+          <g
+             id="g8704">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="10"
+               r="1.25"
+               id="circle8706" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-10"
+               r="1.25"
+               id="circle8708" />
+          </g>
+          <g
+             id="g8710">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="15"
+               r="1.25"
+               id="circle8712" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-15"
+               r="1.25"
+               id="circle8714" />
+          </g>
+          <g
+             id="g8716">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="5"
+               r="1.25"
+               id="circle8718" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="0"
+               cy="-5"
+               r="1.25"
+               id="circle8720" />
+          </g>
+          <g
+             id="g8722">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="16"
+               cy="0"
+               r="1.25"
+               id="circle8724" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-16"
+               cy="0"
+               r="1.25"
+               id="circle8726" />
+          </g>
+          <g
+             id="g8728">
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="8"
+               cy="0"
+               r="1.25"
+               id="circle8730" />
+            <circle
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+               stroke-miterlimit="10"
+               cx="-8"
+               cy="0"
+               r="1.25"
+               id="circle8732" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,435.19331,253.2124)"
+         label="wheels"
+         id="g8776">
+        <g
+           id="g8778">
+          <circle
+             id="circle8780"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle8782"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g8784">
+            <circle
+               id="circle8786"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8788"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8790">
+            <circle
+               id="circle8792"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8794"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8796">
+            <circle
+               id="circle8798"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8800"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8802">
+            <circle
+               id="circle8804"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8806"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g8808">
+            <circle
+               id="circle8810"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle8812"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g10303"
+         transform="translate(-84.044038,141.36628)">
+        <g
+           transform="matrix(0,1,-1,0,34.689897,65.105366)"
+           label="shovel"
+           id="shovel">
+          <rect
+             id="rect10221"
+             height="49"
+             width="110"
+             stroke-miterlimit="10"
+             y="0"
+             x="0"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <rect
+             id="rect10223"
+             height="10"
+             width="4.9000001"
+             stroke-miterlimit="10"
+             y="19.5"
+             x="16.6"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <rect
+             id="rect10225"
+             height="10"
+             width="4.9000001"
+             stroke-miterlimit="10"
+             y="19.5"
+             x="88.5"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+        </g>
+      </g>
+      <g
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-9.2683928,124.57255)"
+         label="wheels"
+         id="g10404">
+        <g
+           id="g10406">
+          <circle
+             id="circle10408"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle10410"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g10412">
+            <circle
+               id="circle10414"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10416"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10418">
+            <circle
+               id="circle10420"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10422"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10424">
+            <circle
+               id="circle10426"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10428"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10430">
+            <circle
+               id="circle10432"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10434"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10436">
+            <circle
+               id="circle10438"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10440"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g10480"
+         label="wheels"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-9.2683928,253.27907)">
+        <g
+           id="g10482">
+          <circle
+             id="circle10484"
+             r="36.5"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <circle
+             id="circle10486"
+             r="1.25"
+             cy="0"
+             cx="0"
+             stroke-miterlimit="10"
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          <g
+             id="g10488">
+            <circle
+               id="circle10490"
+               r="1.25"
+               cy="10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10492"
+               r="1.25"
+               cy="-10"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10494">
+            <circle
+               id="circle10496"
+               r="1.25"
+               cy="15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10498"
+               r="1.25"
+               cy="-15"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10500">
+            <circle
+               id="circle10502"
+               r="1.25"
+               cy="5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10504"
+               r="1.25"
+               cy="-5"
+               cx="0"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10506">
+            <circle
+               id="circle10508"
+               r="1.25"
+               cy="0"
+               cx="16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10510"
+               r="1.25"
+               cy="0"
+               cx="-16"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+          <g
+             id="g10512">
+            <circle
+               id="circle10514"
+               r="1.25"
+               cy="0"
+               cx="8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+            <circle
+               id="circle10516"
+               r="1.25"
+               cy="0"
+               cx="-8"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="translate(-84.044038,26.170627)"
+         id="g10556">
+        <g
+           id="g10558"
+           label="shovel"
+           transform="matrix(0,1,-1,0,34.689897,65.105366)">
+          <rect
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             x="0"
+             y="0"
+             stroke-miterlimit="10"
+             width="110"
+             height="49"
+             id="rect10560" />
+          <rect
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             x="16.6"
+             y="19.5"
+             stroke-miterlimit="10"
+             width="4.9000001"
+             height="10"
+             id="rect10562" />
+          <rect
+             style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-miterlimit:10"
+             x="88.5"
+             y="19.5"
+             stroke-miterlimit="10"
+             width="4.9000001"
+             height="10"
+             id="rect10564" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
