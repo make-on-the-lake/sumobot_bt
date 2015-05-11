@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24in" height="12in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 24000 12000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:blue;stroke-width:3}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="shovel" label="shovel">
+   <rect class="fil0 str0" x="18195" y="881" width="4331" height="1929"/>
+   <rect class="fil0 str0" x="18849" y="1648" width="193" height="394"/>
+   <rect class="fil0 str0" x="21680" y="1648" width="193" height="394"/>
+  </g>
+  <g id="right_wheel" label="wheels">
+   <g id="wheel_template">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 2042.42 2013.15)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 2042.42 2013.15)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1764.03 2291.53)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 2320.81 1734.76)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1624.84 2430.73)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 2460 1595.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1903.23 2152.34)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 2181.62 1873.95)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 2487.84 2458.57)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1597 1567.72)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 2265.13 2235.86)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1819.71 1790.43)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="left_wheel" label="wheels">
+   <g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 2045.94 7076.67)" r="1437"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 2045.94 7076.67)" r="49"/>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 2324.33 7355.05)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 1767.55 6798.28)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 2463.52 7494.25)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 1628.35 6659.08)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 2185.13 7215.86)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 1906.74 6937.47)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 2491.36 6631.24)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 1600.52 7522.09)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 2268.65 6853.95)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 1823.23 7299.38)" r="49"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_0" label="wheels">
+   <g id="wheel_template_1">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3478.35 4532.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3478.35 4532.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3199.97 4811.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3756.74 4254.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3060.77 4950.56)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3895.94 4115.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3339.16 4672.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3617.55 4393.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3923.78 4978.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3032.93 4087.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3701.07 4755.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3255.64 4310.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_2" label="wheels">
+   <g id="wheel_template_3">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3478.35 9632.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3478.35 9632.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3199.97 9911.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3756.74 9354.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3060.77 10050.6)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3895.94 9215.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3339.16 9772.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3617.55 9493.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3923.78 10078.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3032.93 9187.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3701.07 9855.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 3255.64 9410.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_4" label="wheels">
+   <g id="wheel_template_5">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 4942.42 2013.15)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 4942.42 2013.15)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 4664.03 2291.53)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5220.81 1734.76)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 4524.84 2430.73)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5360 1595.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 4803.23 2152.34)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5081.62 1873.95)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5387.84 2458.57)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 4497 1567.72)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5165.13 2235.86)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 4719.71 1790.43)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="left_wheel_6" label="wheels">
+   <g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 4945.94 7076.67)" r="1437"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 4945.94 7076.67)" r="49"/>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5224.33 7355.05)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 4667.55 6798.28)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5363.52 7494.25)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 4528.35 6659.08)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5085.13 7215.86)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 4806.74 6937.47)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5391.36 6631.24)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 4500.52 7522.09)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5168.65 6853.95)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 4723.23 7299.38)" r="49"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_7" label="wheels">
+   <g id="wheel_template_8">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6378.35 4532.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6378.35 4532.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6099.97 4811.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6656.74 4254.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5960.77 4950.56)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6795.94 4115.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6239.16 4672.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6517.55 4393.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6823.78 4978.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5932.93 4087.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6601.07 4755.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6155.64 4310.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_9" label="wheels">
+   <g id="wheel_template_10">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6378.35 9632.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6378.35 9632.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6099.97 9911.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6656.74 9354.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5960.77 10050.6)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6795.94 9215.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6239.16 9772.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6517.55 9493.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6823.78 10078.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5932.93 9187.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6601.07 9855.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 6155.64 9410.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_11" label="wheels">
+   <g id="wheel_template_12">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 7862.42 2013.15)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 7862.42 2013.15)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 7584.03 2291.53)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8140.81 1734.76)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 7444.84 2430.73)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8280 1595.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 7723.23 2152.34)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8001.62 1873.95)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8307.84 2458.57)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 7417 1567.72)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8085.13 2235.86)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 7639.71 1790.43)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="left_wheel_13" label="wheels">
+   <g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 7865.94 7076.67)" r="1437"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 7865.94 7076.67)" r="49"/>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 8144.33 7355.05)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 7587.55 6798.28)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 8283.52 7494.25)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 7448.35 6659.08)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 8005.13 7215.86)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 7726.74 6937.47)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 8311.36 6631.24)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 7420.52 7522.09)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 8088.65 6853.95)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 7643.23 7299.38)" r="49"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_14" label="wheels">
+   <g id="wheel_template_15">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9298.35 4532.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9298.35 4532.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9019.97 4811.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9576.74 4254.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8880.77 4950.56)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9715.94 4115.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9159.16 4672.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9437.55 4393.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9743.78 4978.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8852.93 4087.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9521.07 4755.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9075.64 4310.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_16" label="wheels">
+   <g id="wheel_template_17">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9298.35 9632.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9298.35 9632.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9019.97 9911.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9576.74 9354.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8880.77 10050.6)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9715.94 9215.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9159.16 9772.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9437.55 9493.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9743.78 10078.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 8852.93 9187.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9521.07 9855.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9075.64 9410.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_18" label="wheels">
+   <g id="wheel_template_19">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10782.4 2013.15)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10782.4 2013.15)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10504 2291.53)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11060.8 1734.76)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10364.8 2430.73)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11200 1595.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10643.2 2152.34)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10921.6 1873.95)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11227.8 2458.57)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10337 1567.72)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11005.1 2235.86)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 10559.7 1790.43)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="left_wheel_20" label="wheels">
+   <g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10785.9 7076.67)" r="1437"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10785.9 7076.67)" r="49"/>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 11064.3 7355.05)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10507.5 6798.28)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 11203.5 7494.25)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10368.4 6659.08)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10925.1 7215.86)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10646.7 6937.47)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 11231.4 6631.24)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10340.5 7522.09)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 11008.6 6853.95)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 10563.2 7299.38)" r="49"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_21" label="wheels">
+   <g id="wheel_template_22">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12218.4 4532.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12218.4 4532.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11940 4811.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12496.7 4254.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11800.8 4950.56)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12635.9 4115.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12079.2 4672.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12357.5 4393.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12663.8 4978.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11772.9 4087.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12441.1 4755.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11995.6 4310.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_23" label="wheels">
+   <g id="wheel_template_24">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12218.4 9632.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12218.4 9632.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11940 9911.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12496.7 9354.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11800.8 10050.6)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12635.9 9215.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12079.2 9772.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12357.5 9493.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12663.8 10078.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11772.9 9187.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 12441.1 9855.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 11995.6 9410.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_25" label="wheels">
+   <g id="wheel_template_26">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13702.4 2013.15)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13702.4 2013.15)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13424 2291.53)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13980.8 1734.76)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13284.8 2430.73)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14120 1595.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13563.2 2152.34)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13841.6 1873.95)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14147.8 2458.57)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13257 1567.72)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13925.1 2235.86)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 13479.7 1790.43)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="left_wheel_27" label="wheels">
+   <g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13705.9 7076.67)" r="1437"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13705.9 7076.67)" r="49"/>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13984.3 7355.05)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13427.5 6798.28)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 14123.5 7494.25)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13288.4 6659.08)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13845.1 7215.86)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13566.7 6937.47)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 14151.4 6631.24)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13260.5 7522.09)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13928.6 6853.95)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 13483.2 7299.38)" r="49"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_28" label="wheels">
+   <g id="wheel_template_29">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15138.4 4532.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15138.4 4532.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14860 4811.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15416.7 4254.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14720.8 4950.56)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15555.9 4115.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14999.2 4672.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15277.5 4393.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15583.8 4978.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14692.9 4087.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15361.1 4755.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14915.6 4310.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_30" label="wheels">
+   <g id="wheel_template_31">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15138.4 9632.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15138.4 9632.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14860 9911.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15416.7 9354.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14720.8 10050.6)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15555.9 9215.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14999.2 9772.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15277.5 9493.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15583.8 10078.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14692.9 9187.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 15361.1 9855.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 14915.6 9410.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_32" label="wheels">
+   <g id="wheel_template_33">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16642.4 2013.15)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16642.4 2013.15)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16364 2291.53)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16920.8 1734.76)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16224.8 2430.73)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17060 1595.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16503.2 2152.34)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16781.6 1873.95)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17087.8 2458.57)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16197 1567.72)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16865.1 2235.86)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 16419.7 1790.43)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="left_wheel_34" label="wheels">
+   <g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16645.9 7076.67)" r="1437"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16645.9 7076.67)" r="49"/>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16924.3 7355.05)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16367.5 6798.28)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 17063.5 7494.25)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16228.4 6659.08)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16785.1 7215.86)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16506.7 6937.47)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 17091.4 6631.24)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16200.5 7522.09)" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16868.6 6853.95)" r="49"/>
+      <circle class="fil0 str0" transform="matrix(0.707107 -0.707107 0.707107 0.707107 16423.2 7299.38)" r="49"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_35" label="wheels">
+   <g id="wheel_template_36">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18078.4 4532.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18078.4 4532.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17800 4811.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18356.7 4254.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17660.8 4950.56)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18495.9 4115.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17939.2 4672.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18217.5 4393.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18523.8 4978.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17632.9 4087.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18301.1 4755.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17855.6 4310.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_37" label="wheels">
+   <g id="wheel_template_38">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18078.4 9632.98)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18078.4 9632.98)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17800 9911.37)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18356.7 9354.59)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17660.8 10050.6)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18495.9 9215.4)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17939.2 9772.17)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18217.5 9493.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18523.8 10078.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17632.9 9187.56)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 18301.1 9855.69)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 17855.6 9410.27)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="shovel_39" label="shovel">
+   <rect class="fil0 str0" x="18103" y="6128" width="4331" height="1929"/>
+   <rect class="fil0 str0" x="18756" y="6896" width="193" height="394"/>
+   <rect class="fil0 str0" x="21587" y="6896" width="193" height="394"/>
+  </g>
+  <g id="right_wheel_40" label="wheels">
+   <g id="wheel_template_41">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21056 4546.64)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21056 4546.64)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20777.6 4825.03)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21334.4 4268.25)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20638.4 4964.22)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21473.6 4129.06)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20916.8 4685.84)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21195.2 4407.45)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21501.4 4992.06)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20610.5 4101.22)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21278.7 4769.35)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20833.3 4323.93)" r="49"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_wheel_42" label="wheels">
+   <g id="wheel_template_43">
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21083.2 9546.21)" r="1437"/>
+    <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21083.2 9546.21)" r="49"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20804.8 9824.6)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21361.6 9267.82)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20665.6 9963.79)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21500.8 9128.63)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20944 9685.4)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21222.4 9407.01)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21528.6 9991.63)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20637.8 9100.79)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 21305.9 9768.92)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(0.707107 0.707107 -0.707107 0.707107 20860.5 9323.5)" r="49"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

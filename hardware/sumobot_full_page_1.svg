@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24in" height="12in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 24000 12000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:blue;stroke-width:3}
+    .fil0 {fill:none}
+    .fil1 {fill:black}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="top" label="top">
+   <polyline class="fil0 str0" points="4795,8180 7433,8180 7433,8523 7626,8523 7626,8916 7433,8916 7433,11160 7626,11160 7626,11554 7433,11554 7433,11751 4795,11751 4795,11554 4603,11554 4603,11160 4795,11160 4795,8916 4603,8916 4603,8523 4795,8523 4795,8180 "/>
+   <g id="arduino_mounts">
+    <circle class="fil0 str0" cx="5762" cy="9200" r="49"/>
+    <circle class="fil0 str0" cx="6860" cy="9200" r="49"/>
+    <circle class="fil0 str0" cx="5164" cy="11200" r="49"/>
+    <circle class="fil0 str0" cx="7065" cy="11251" r="49"/>
+   </g>
+   <g>
+    <path class="fil1 str0" d="M6088 10144l0 101c0,3 0,7 -1,11 -1,4 -3,7 -5,10 -2,3 -5,5 -8,7 -4,2 -8,2 -12,2l-100 0c-6,0 -10,0 -14,-2 -3,-2 -6,-4 -8,-7 -2,-3 -3,-7 -4,-10 -1,-4 -1,-8 -2,-11l0 -101 0 101c1,3 1,7 2,11 1,3 2,7 4,10 2,2 5,5 8,7 4,2 8,2 14,2l100 0c4,0 8,0 12,-2 3,-2 6,-4 8,-7 2,-3 4,-6 5,-10 1,-4 1,-8 1,-11l0 -101z"/>
+    <path class="fil1 str0" d="M6143 10144l127 0c4,0 6,1 9,2 3,1 6,3 8,6 2,2 4,5 5,9 2,3 2,6 2,10l0 19c0,4 0,7 -2,11 -1,3 -3,6 -5,8 -2,3 -4,5 -7,6 -3,1 -6,2 -9,2l-87 2 87 -2c3,0 6,-1 9,-2 3,-1 5,-3 7,-6 2,-2 4,-5 5,-8 2,-4 2,-7 2,-11l0 -19c0,-4 0,-7 -2,-10 -1,-4 -3,-7 -5,-9 -2,-3 -5,-5 -8,-6 -2,-2 -5,-2 -9,-2l-127 0 0 132 0 -132z"/>
+    <polygon class="fil1 str0" points="6114,10047 6114,9801 6226,9906 6114,9801 6003,9906 6114,9801 "/>
+   </g>
+  </g>
+  <g id="bottom" label="bottom">
+   <polyline class="fil0 str0" points="533,242 3171,242 3171,439 3364,439 3364,833 3171,833 3171,3838 3364,3838 3364,4231 3171,4231 3171,4428 533,4428 533,4231 340,4231 340,3838 533,3838 533,833 340,833 340,439 533,439 533,242 "/>
+   <g id="caster_mounts">
+    <circle class="fil0 str0" cx="1360" cy="833" r="49"/>
+    <circle class="fil0 str0" cx="2344" cy="833" r="49"/>
+   </g>
+   <rect class="fil0 str0" x="730" y="1926" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="2777" y="1926" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="730" y="3641" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="2777" y="3641" width="196.85" height="98.4252"/>
+   <polygon class="fil1 str0" points="1852,2459 1852,2212 1963,2318 1852,2212 1740,2318 1852,2212 "/>
+  </g>
+  <g id="shovel" label="shovel">
+   <rect class="fil0 str0" x="18454" y="231" width="4331" height="1929"/>
+   <rect class="fil0 str0" x="19108" y="998" width="193" height="394"/>
+   <rect class="fil0 str0" x="21938" y="998" width="193" height="394"/>
+  </g>
+  <g id="right_side" label="side">
+   <g id="side_template">
+    <polyline class="fil0 str0" points="5897,8109 3653,8109 3653,4684 4713,4256 4640,4077 5005,3930 5078,4108 5897,3777 5897,8109 "/>
+    <rect class="fil0 str0" x="4681" y="5706" width="827" height="1616"/>
+    <g>
+     <circle class="fil0 str0" cx="4897" cy="5509" r="49"/>
+     <circle class="fil0 str0" cx="5291" cy="5509" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" cx="4897" cy="7519" r="49"/>
+     <circle class="fil0 str0" cx="5291" cy="7519" r="49"/>
+    </g>
+    <circle class="fil0 str0" cx="5094" cy="7322" r="138"/>
+    <rect class="fil0 str0" x="3850" y="4881" width="193" height="394"/>
+    <rect class="fil0 str0" x="3850" y="7519" width="193" height="394"/>
+    <rect class="fil0 str0" x="5508" y="4120" width="193" height="394"/>
+    <rect class="fil0 str0" x="5508" y="7519" width="193" height="394"/>
+   </g>
+  </g>
+  <g id="left_side">
+   <g>
+    <g>
+     <polyline class="fil0 str0" points="5972,8097 8216,8097 8216,4672 7157,4243 7229,4065 6864,3917 6792,4096 5972,3765 5972,8097 "/>
+     <rect class="fil0 str0" x="6362" y="5693" width="827" height="1616"/>
+     <g>
+      <circle class="fil0 str0" cx="6972" cy="5496" r="49"/>
+      <circle class="fil0 str0" cx="6578" cy="5496" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" cx="6972" cy="7506" r="49"/>
+      <circle class="fil0 str0" cx="6578" cy="7506" r="49"/>
+     </g>
+     <circle class="fil0 str0" cx="6775" cy="7309" r="138"/>
+     <rect class="fil0 str0" x="7826" y="4868" width="193" height="394"/>
+     <rect class="fil0 str0" x="7826" y="7506" width="193" height="394"/>
+     <rect class="fil0 str0" x="6169" y="4108" width="193" height="394"/>
+     <rect class="fil0 str0" x="6169" y="7506" width="193" height="394"/>
+    </g>
+   </g>
+  </g>
+  <g id="bottom_0" label="bottom">
+   <polyline class="fil0 str0" points="362,11554 362,8917 559,8917 559,8724 953,8724 953,8917 3957,8917 3957,8724 4351,8724 4351,8917 4548,8917 4548,11554 4351,11554 4351,11747 3957,11747 3957,11554 953,11554 953,11747 559,11747 559,11554 362,11554 "/>
+   <g id="caster_mounts_1">
+    <circle class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 952.508 10727.6)" r="49"/>
+    <circle class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 952.508 9743.39)" r="49"/>
+   </g>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 2045.85 11357.6)" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 2045.85 9310.32)" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 3760.42 11357.6)" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 3760.42 9310.32)" width="196.85" height="98.4252"/>
+   <polygon class="fil1 str0" points="2578,10236 2332,10236 2437,10124 2332,10236 2437,10347 2332,10236 "/>
+  </g>
+  <g id="bottom_2" label="bottom">
+   <polyline class="fil0 str0" points="527,4483 3165,4483 3165,4680 3358,4680 3358,5074 3165,5074 3165,8079 3358,8079 3358,8472 3165,8472 3165,8669 527,8669 527,8472 334,8472 334,8079 527,8079 527,5074 334,5074 334,4680 527,4680 527,4483 "/>
+   <g id="caster_mounts_3">
+    <circle class="fil0 str0" cx="1354" cy="5074" r="49"/>
+    <circle class="fil0 str0" cx="2338" cy="5074" r="49"/>
+   </g>
+   <rect class="fil0 str0" x="724" y="6167" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="2771" y="6167" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="724" y="7882" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="2771" y="7882" width="196.85" height="98.4252"/>
+   <polygon class="fil1 str0" points="1846,6700 1846,6453 1957,6559 1846,6453 1734,6559 1846,6453 "/>
+  </g>
+  <g id="top_4" label="top">
+   <polyline class="fil0 str0" points="7870,8180 10508,8180 10508,8523 10701,8523 10701,8917 10508,8917 10508,11161 10701,11161 10701,11554 10508,11554 10508,11751 7870,11751 7870,11554 7677,11554 7677,11161 7870,11161 7870,8917 7677,8917 7677,8523 7870,8523 7870,8180 "/>
+   <g id="arduino_mounts_5">
+    <circle class="fil0 str0" cx="8837" cy="9200" r="49"/>
+    <circle class="fil0 str0" cx="9935" cy="9200" r="49"/>
+    <circle class="fil0 str0" cx="8238" cy="11200" r="49"/>
+    <circle class="fil0 str0" cx="10140" cy="11251" r="49"/>
+   </g>
+   <g>
+    <path class="fil1 str0" d="M9162 10144l0 101c1,4 0,8 -1,11 -1,4 -2,7 -4,10 -2,3 -5,5 -8,7 -4,2 -8,3 -13,3l-99 0c-6,0 -11,-1 -14,-3 -4,-2 -6,-4 -8,-7 -2,-3 -4,-6 -5,-10 0,-4 -1,-7 -1,-11l0 -101 0 101c0,4 1,7 1,11 1,4 3,7 5,10 2,3 4,5 8,7 3,2 8,3 14,3l99 0c5,0 9,-1 13,-3 3,-2 6,-4 8,-7 2,-3 3,-6 4,-10 1,-3 2,-7 1,-11l0 -101z"/>
+    <path class="fil1 str0" d="M9218 10144l127 0c3,0 6,1 9,2 3,2 5,4 8,6 2,2 4,5 5,9 1,3 2,7 2,10l0 19c0,4 -1,8 -2,11 -1,3 -3,6 -5,9 -2,2 -5,4 -8,5 -2,2 -5,2 -8,2l-87 2 87 -2c3,0 6,0 8,-2 3,-1 6,-3 8,-5 2,-3 4,-6 5,-9 1,-3 2,-7 2,-11l0 -19c0,-3 -1,-7 -2,-10 -1,-4 -3,-7 -5,-9 -3,-2 -5,-4 -8,-6 -3,-1 -6,-2 -9,-2l-127 0 0 132 0 -132z"/>
+    <polygon class="fil1 str0" points="9189,10048 9189,9801 9300,9907 9189,9801 9078,9907 9189,9801 "/>
+   </g>
+  </g>
+  <g id="top_6" label="top">
+   <polyline class="fil0 str0" points="10941,8180 13579,8180 13579,8523 13772,8523 13772,8916 13579,8916 13579,11160 13772,11160 13772,11554 13579,11554 13579,11751 10941,11751 10941,11554 10748,11554 10748,11160 10941,11160 10941,8916 10748,8916 10748,8523 10941,8523 10941,8180 "/>
+   <g id="arduino_mounts_7">
+    <circle class="fil0 str0" cx="11907" cy="9200" r="49"/>
+    <circle class="fil0 str0" cx="13006" cy="9200" r="49"/>
+    <circle class="fil0 str0" cx="11309" cy="11200" r="49"/>
+    <circle class="fil0 str0" cx="13211" cy="11251" r="49"/>
+   </g>
+   <g>
+    <path class="fil1 str0" d="M12233 10144l0 101c0,3 0,7 -1,11 -1,4 -2,7 -4,10 -3,3 -5,5 -9,7 -3,2 -7,2 -12,2l-99 0c-6,0 -11,0 -14,-2 -4,-2 -7,-4 -9,-7 -2,-3 -3,-7 -4,-10 -1,-4 -1,-8 -1,-11l0 -101 0 101c0,3 0,7 1,11 1,3 2,7 4,10 2,2 5,5 9,7 3,2 8,2 14,2l99 0c5,0 9,0 12,-2 4,-2 6,-4 9,-7 2,-3 3,-6 4,-10 1,-4 1,-8 1,-11l0 -101z"/>
+    <path class="fil1 str0" d="M12289 10144l127 0c3,0 6,1 9,2 3,1 5,3 7,6 3,2 4,5 6,9 1,3 2,6 2,10l0 19c0,4 -1,7 -2,11 -2,3 -3,6 -5,8 -2,3 -5,5 -8,6 -3,1 -6,2 -9,2l-86 2 86 -2c3,0 6,-1 9,-2 3,-1 6,-3 8,-6 2,-2 3,-5 5,-8 1,-4 2,-7 2,-11l0 -19c0,-4 -1,-7 -2,-10 -2,-4 -3,-7 -6,-9 -2,-3 -4,-5 -7,-6 -3,-2 -6,-2 -9,-2l-127 0 0 132 0 -132z"/>
+    <polygon class="fil1 str0" points="12260,10047 12260,9801 12371,9906 12260,9801 12148,9906 12260,9801 "/>
+   </g>
+  </g>
+  <g id="bottom_8" label="bottom">
+   <polyline class="fil0 str0" points="13835,6468 16473,6468 16473,6665 16666,6665 16666,7059 16473,7059 16473,10063 16666,10063 16666,10457 16473,10457 16473,10654 13835,10654 13835,10457 13643,10457 13643,10063 13835,10063 13835,7059 13643,7059 13643,6665 13835,6665 13835,6468 "/>
+   <g id="caster_mounts_9">
+    <circle class="fil0 str0" cx="14662" cy="7059" r="49"/>
+    <circle class="fil0 str0" cx="15647" cy="7059" r="49"/>
+   </g>
+   <rect class="fil0 str0" x="14032" y="8152" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="16080" y="8152" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="14032" y="9867" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" x="16080" y="9867" width="196.85" height="98.4252"/>
+   <polygon class="fil1 str0" points="15154,8684 15154,8438 15266,8543 15154,8438 15043,8543 15154,8438 "/>
+  </g>
+  <g id="right_side_10" label="side">
+   <g id="side_template_11">
+    <polyline class="fil0 str0" points="3418,209 5662,209 5662,3635 4602,4063 4674,4242 4309,4389 4237,4210 3418,4541 3418,209 "/>
+    <rect class="fil0 str0" x="3807" y="997" width="827" height="1616"/>
+    <g>
+     <circle class="fil0 str0" cx="4418" cy="2810" r="49"/>
+     <circle class="fil0 str0" cx="4024" cy="2810" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" cx="4418" cy="800" r="49"/>
+     <circle class="fil0 str0" cx="4024" cy="800" r="49"/>
+    </g>
+    <circle class="fil0 str0" cx="4221" cy="997" r="138"/>
+    <rect class="fil0 str0" x="5272" y="3044" width="193" height="394"/>
+    <rect class="fil0 str0" x="5272" y="406" width="193" height="394"/>
+    <rect class="fil0 str0" x="3614" y="3805" width="193" height="394"/>
+    <rect class="fil0 str0" x="3614" y="406" width="193" height="394"/>
+   </g>
+  </g>
+  <g id="left_side_12">
+   <g>
+    <g>
+     <polyline class="fil0 str0" points="8452,188 6208,188 6208,3613 7267,4041 7195,4220 7560,4368 7632,4189 8452,4520 8452,188 "/>
+     <rect class="fil0 str0" x="7235" y="975" width="827" height="1616"/>
+     <g>
+      <circle class="fil0 str0" cx="7452" cy="2788" r="49"/>
+      <circle class="fil0 str0" cx="7846" cy="2788" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" cx="7452" cy="779" r="49"/>
+      <circle class="fil0 str0" cx="7846" cy="779" r="49"/>
+     </g>
+     <circle class="fil0 str0" cx="7649" cy="975" r="138"/>
+     <rect class="fil0 str0" x="6405" y="3023" width="193" height="394"/>
+     <rect class="fil0 str0" x="6405" y="385" width="193" height="394"/>
+     <rect class="fil0 str0" x="8062" y="3783" width="193" height="394"/>
+     <rect class="fil0 str0" x="8062" y="385" width="193" height="394"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_side_13" label="side">
+   <g id="side_template_14">
+    <polyline class="fil0 str0" points="13517,8109 11273,8109 11273,4683 12332,4255 12260,4076 12625,3929 12697,4108 13517,3777 13517,8109 "/>
+    <rect class="fil0 str0" x="12300" y="5705" width="827" height="1616"/>
+    <g>
+     <circle class="fil0 str0" cx="12517" cy="5508" r="49"/>
+     <circle class="fil0 str0" cx="12911" cy="5508" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" cx="12517" cy="7518" r="49"/>
+     <circle class="fil0 str0" cx="12911" cy="7518" r="49"/>
+    </g>
+    <circle class="fil0 str0" cx="12714" cy="7321" r="138"/>
+    <rect class="fil0 str0" x="11470" y="4880" width="193" height="394"/>
+    <rect class="fil0 str0" x="11470" y="7518" width="193" height="394"/>
+    <rect class="fil0 str0" x="13127" y="4119" width="193" height="394"/>
+    <rect class="fil0 str0" x="13127" y="7518" width="193" height="394"/>
+   </g>
+  </g>
+  <g id="left_side_15">
+   <g>
+    <g>
+     <polyline class="fil0 str0" points="8500,8120 10744,8120 10744,4695 9684,4267 9757,4088 9392,3940 9319,4119 8500,3788 8500,8120 "/>
+     <rect class="fil0 str0" x="8890" y="5716" width="827" height="1616"/>
+     <g>
+      <circle class="fil0 str0" cx="9500" cy="5519" r="49"/>
+      <circle class="fil0 str0" cx="9106" cy="5519" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" cx="9500" cy="7529" r="49"/>
+      <circle class="fil0 str0" cx="9106" cy="7529" r="49"/>
+     </g>
+     <circle class="fil0 str0" cx="9303" cy="7332" r="138"/>
+     <rect class="fil0 str0" x="10354" y="4891" width="193" height="394"/>
+     <rect class="fil0 str0" x="10354" y="7529" width="193" height="394"/>
+     <rect class="fil0 str0" x="8697" y="4131" width="193" height="394"/>
+     <rect class="fil0 str0" x="8697" y="7529" width="193" height="394"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_side_16" label="side">
+   <g id="side_template_17">
+    <polyline class="fil0 str0" points="11037,209 13281,209 13281,3634 12222,4062 12294,4241 11929,4388 11857,4210 11037,4541 11037,209 "/>
+    <rect class="fil0 str0" x="11427" y="996" width="827" height="1616"/>
+    <g>
+     <circle class="fil0 str0" cx="12037" cy="2809" r="49"/>
+     <circle class="fil0 str0" cx="11643" cy="2809" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" cx="12037" cy="799" r="49"/>
+     <circle class="fil0 str0" cx="11643" cy="799" r="49"/>
+    </g>
+    <circle class="fil0 str0" cx="11840" cy="996" r="138"/>
+    <rect class="fil0 str0" x="12891" y="3043" width="193" height="394"/>
+    <rect class="fil0 str0" x="12891" y="406" width="193" height="394"/>
+    <rect class="fil0 str0" x="11234" y="3804" width="193" height="394"/>
+    <rect class="fil0 str0" x="11234" y="406" width="193" height="394"/>
+   </g>
+  </g>
+  <g id="left_side_18">
+   <g>
+    <g>
+     <polyline class="fil0 str0" points="10980,211 8736,211 8736,3636 9795,4064 9723,4243 10088,4391 10160,4212 10980,4543 10980,211 "/>
+     <rect class="fil0 str0" x="9763" y="998" width="827" height="1616"/>
+     <g>
+      <circle class="fil0 str0" cx="9980" cy="2811" r="49"/>
+      <circle class="fil0 str0" cx="10373" cy="2811" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" cx="9980" cy="802" r="49"/>
+      <circle class="fil0 str0" cx="10373" cy="802" r="49"/>
+     </g>
+     <circle class="fil0 str0" cx="10177" cy="998" r="138"/>
+     <rect class="fil0 str0" x="8932" y="3046" width="193" height="394"/>
+     <rect class="fil0 str0" x="8932" y="408" width="193" height="394"/>
+     <rect class="fil0 str0" x="10590" y="3806" width="193" height="394"/>
+     <rect class="fil0 str0" x="10590" y="408" width="193" height="394"/>
+    </g>
+   </g>
+  </g>
+  <g id="right_side_19" label="side">
+   <g id="side_template_20">
+    <polyline class="fil0 str0" points="18357,235 18357,2479 14932,2479 14504,1420 14325,1492 14178,1127 14356,1055 14025,235 18357,235 "/>
+    <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 15953.7 1451.85)" width="827" height="1616"/>
+    <g>
+     <circle class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 15756.8 1235.31)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 15756.8 841.61)" r="49"/>
+    </g>
+    <g>
+     <circle class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 17766.7 1235.31)" r="49"/>
+     <circle class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 17766.7 841.61)" r="49"/>
+    </g>
+    <circle class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 17569.8 1038.46)" r="138"/>
+    <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 15128.9 2282.56)" width="193" height="394"/>
+    <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 17766.7 2282.56)" width="193" height="394"/>
+    <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 14368.2 625.075)" width="193" height="394"/>
+    <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 17766.7 625.075)" width="193" height="394"/>
+   </g>
+  </g>
+  <g id="left_side_21">
+   <g>
+    <g>
+     <polyline class="fil0 str0" points="13581,6413 15825,6413 15825,2988 14766,2560 14838,2381 14473,2233 14401,2412 13581,2081 13581,6413 "/>
+     <rect class="fil0 str0" x="13971" y="4009" width="827" height="1616"/>
+     <g>
+      <circle class="fil0 str0" cx="14581" cy="3812" r="49"/>
+      <circle class="fil0 str0" cx="14188" cy="3812" r="49"/>
+     </g>
+     <g>
+      <circle class="fil0 str0" cx="14581" cy="5822" r="49"/>
+      <circle class="fil0 str0" cx="14188" cy="5822" r="49"/>
+     </g>
+     <circle class="fil0 str0" cx="14384" cy="5625" r="138"/>
+     <rect class="fil0 str0" x="15436" y="3185" width="193" height="394"/>
+     <rect class="fil0 str0" x="15436" y="5822" width="193" height="394"/>
+     <rect class="fil0 str0" x="13778" y="2424" width="193" height="394"/>
+     <rect class="fil0 str0" x="13778" y="5822" width="193" height="394"/>
+    </g>
+   </g>
+  </g>
+  <g id="shovel_22" label="shovel">
+   <rect class="fil0 str0" x="18954" y="2206" width="4331" height="1929"/>
+   <rect class="fil0 str0" x="19608" y="2974" width="193" height="394"/>
+   <rect class="fil0 str0" x="22439" y="2974" width="193" height="394"/>
+  </g>
+  <g id="top_23" label="top">
+   <polyline class="fil0 str0" points="16075,2553 18712,2553 18712,2896 18905,2896 18905,3290 18712,3290 18712,5534 18905,5534 18905,5927 18712,5927 18712,6124 16075,6124 16075,5927 15882,5927 15882,5534 16075,5534 16075,3290 15882,3290 15882,2896 16075,2896 16075,2553 "/>
+   <g id="arduino_mounts_24">
+    <circle class="fil0 str0" cx="17041" cy="3573" r="49"/>
+    <circle class="fil0 str0" cx="18139" cy="3573" r="49"/>
+    <circle class="fil0 str0" cx="16443" cy="5573" r="49"/>
+    <circle class="fil0 str0" cx="18344" cy="5624" r="49"/>
+   </g>
+   <g>
+    <path class="fil1 str0" d="M17367 4517l0 101c0,4 0,8 -1,11 -1,4 -3,7 -5,10 -2,3 -5,5 -8,7 -3,2 -8,3 -12,3l-100 0c-6,0 -10,-1 -14,-3 -3,-2 -6,-4 -8,-7 -2,-3 -3,-6 -4,-10 -1,-4 -1,-7 -2,-11l0 -101 0 101c1,4 1,7 2,11 1,4 2,7 4,10 2,3 5,5 8,7 4,2 8,3 14,3l100 0c4,0 9,-1 12,-3 3,-2 6,-4 8,-7 2,-3 4,-6 5,-10 1,-3 1,-7 1,-11l0 -101z"/>
+    <path class="fil1 str0" d="M17422 4517l127 0c4,0 7,1 9,2 3,2 6,4 8,6 2,3 4,6 5,9 2,3 2,7 2,11l0 18c0,4 0,8 -2,11 -1,3 -3,6 -5,9 -2,2 -4,4 -7,5 -3,2 -6,3 -9,3l-87 1 87 -1c3,0 6,-1 9,-3 3,-1 5,-3 7,-5 2,-3 4,-6 5,-9 2,-3 2,-7 2,-11l0 -18c0,-4 0,-8 -2,-11 -1,-3 -3,-6 -5,-9 -2,-2 -5,-4 -8,-6 -2,-1 -5,-2 -8,-2l-128 0 0 132 0 -132z"/>
+    <polygon class="fil1 str0" points="17393,4421 17393,4174 17505,4280 17393,4174 17282,4280 17393,4174 "/>
+   </g>
+  </g>
+  <g id="top_25" label="top">
+   <polyline class="fil0 str0" points="16717,8124 19355,8124 19355,8466 19548,8466 19548,8860 19355,8860 19355,11104 19548,11104 19548,11498 19355,11498 19355,11695 16717,11695 16717,11498 16524,11498 16524,11104 16717,11104 16717,8860 16524,8860 16524,8466 16717,8466 16717,8124 "/>
+   <g id="arduino_mounts_26">
+    <circle class="fil0 str0" cx="17684" cy="9144" r="49"/>
+    <circle class="fil0 str0" cx="18782" cy="9144" r="49"/>
+    <circle class="fil0 str0" cx="17085" cy="11144" r="49"/>
+    <circle class="fil0 str0" cx="18987" cy="11195" r="49"/>
+   </g>
+   <g>
+    <path class="fil1 str0" d="M18010 10087l0 102c0,3 -1,7 -1,11 -1,4 -3,7 -5,10 -2,3 -5,5 -8,7 -4,2 -8,2 -12,2l-100 0c-6,0 -10,-1 -14,-2 -3,-2 -6,-5 -8,-8 -2,-2 -3,-6 -4,-9 -1,-4 -2,-8 -2,-11l0 -102 0 102c0,3 1,7 2,11 1,3 2,7 4,9 2,3 5,6 8,8 4,1 8,2 14,2l100 0c4,0 8,0 12,-2 3,-2 6,-4 8,-7 2,-3 4,-6 5,-10 0,-4 1,-8 1,-11l0 -102z"/>
+    <path class="fil1 str0" d="M18065 10088l127 0c3,0 6,0 9,2 3,1 6,3 8,6 2,2 4,5 5,8 2,4 2,7 2,11l0 19c0,4 0,7 -2,11 -1,3 -3,6 -5,8 -2,3 -5,5 -7,6 -3,1 -6,2 -9,2l-87 2 87 -2c3,0 6,-1 9,-2 3,-1 5,-3 7,-6 2,-2 4,-5 5,-8 2,-4 2,-7 2,-11l0 -19c0,-4 -1,-7 -2,-11 -1,-3 -3,-6 -5,-8 -2,-3 -5,-5 -8,-6 -3,-2 -6,-2 -9,-2l-127 0 0 132 0 -132z"/>
+    <polygon class="fil1 str0" points="18036,9991 18036,9745 18148,9850 18036,9745 17925,9850 18036,9745 "/>
+   </g>
+  </g>
+  <g id="bottom_27" label="bottom">
+   <polyline class="fil0 str0" points="23151,4381 23151,7019 22955,7019 22955,7212 22561,7212 22561,7019 19556,7019 19556,7212 19162,7212 19162,7019 18966,7019 18966,4381 19162,4381 19162,4188 19556,4188 19556,4381 22561,4381 22561,4188 22955,4188 22955,4381 23151,4381 "/>
+   <g id="caster_mounts_28">
+    <circle class="fil0 str0" transform="matrix(2.64845E-014 1 -1 2.64845E-014 22560.9 5207.74)" r="49"/>
+    <circle class="fil0 str0" transform="matrix(2.64845E-014 1 -1 2.64845E-014 22560.9 6191.99)" r="49"/>
+   </g>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 1 -1 2.64845E-014 21467.6 4577.81)" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 1 -1 2.64845E-014 21467.6 6625.06)" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 1 -1 2.64845E-014 19753 4577.81)" width="196.85" height="98.4252"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 1 -1 2.64845E-014 19753 6625.06)" width="196.85" height="98.4252"/>
+   <polygon class="fil1 str0" points="20935,5700 21182,5700 21076,5811 21182,5700 21076,5588 21182,5700 "/>
+  </g>
+  <g id="shovel_29" label="shovel">
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 19593.7 11397.2)" width="4331" height="1929"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 20361.4 10743.6)" width="193" height="394"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 20361.4 7912.93)" width="193" height="394"/>
+  </g>
+  <g id="shovel_30" label="shovel">
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 19593.7 11397.2)" width="4331" height="1929"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 20361.4 10743.6)" width="193" height="394"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 20361.4 7912.93)" width="193" height="394"/>
+  </g>
+  <g id="shovel_31" label="shovel">
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 21587.4 11579.5)" width="4331" height="1929"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 22355.1 10925.9)" width="193" height="394"/>
+   <rect class="fil0 str0" transform="matrix(2.64845E-014 -1 1 2.64845E-014 22355.1 8095.24)" width="193" height="394"/>
+  </g>
+ </g>
+</svg>
