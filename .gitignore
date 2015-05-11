@@ -2,6 +2,7 @@
 xcuserdata
 .idea
 
+AppPackages/
 bin/
 obj/
 *.user

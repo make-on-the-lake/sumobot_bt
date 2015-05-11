@@ -31,5 +31,12 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <m2:DeviceCapability Name="bluetooth.genericAttributeProfile">
+      <m2:Device Id="any">
+        <m2:Function Type="name:genericAccess" />
+        <m2:Function Type="serviceId:0000ffe0-0000-1000-8000-00805f9b34fb"/>
+        <m2:Function Type="serviceId:0000ffe1-0000-1000-8000-00805f9b34fb"/>
+      </m2:Device>
+    </m2:DeviceCapability>
   </Capabilities>
 </Package>
