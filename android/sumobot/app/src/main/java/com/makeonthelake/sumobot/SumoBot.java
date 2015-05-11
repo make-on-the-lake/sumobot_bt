@@ -5,6 +5,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
+import android.bluetooth.BluetoothGattDescriptor;
 import android.bluetooth.BluetoothGattServer;
 import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothProfile;
@@ -13,6 +14,7 @@ import android.os.Handler;
 import android.util.Log;
 
 import java.nio.ByteBuffer/**/;
+import java.nio.ByteOrder;
 
 public class SumoBot {
     private final static String DEBUG_TAG = SumoBot.class.getName();
@@ -170,6 +172,7 @@ public class SumoBot {
             buffer.put(MOTOR_PADDING);
             buffer.put(EMPTY);
             buffer.put(END);
+            buffer = buffer.order(ByteOrder.LITTLE_ENDIAN);
 
             byte[] command = buffer.array();
             writeCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
