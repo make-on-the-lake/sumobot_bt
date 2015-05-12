@@ -5,6 +5,8 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
+import android.bluetooth.BluetoothGattDescriptor;
+import android.bluetooth.BluetoothGattServer;
 import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothProfile;
 import android.content.Context;
@@ -12,6 +14,7 @@ import android.os.Handler;
 import android.util.Log;
 
 import java.nio.ByteBuffer/**/;
+import java.nio.ByteOrder;
 
 public class SumoBot {
     private final static String DEBUG_TAG = SumoBot.class.getName();
@@ -106,6 +109,7 @@ public class SumoBot {
             Log.d(DEBUG_TAG, "looking for: " + SERVICE_ID);
             for (BluetoothGattService service : gatt.getServices()) {
                 Log.d(DEBUG_TAG, "Found a Service UUID: " + service.getUuid().toString());
+                bluetoothAdapter.stopLeScan(btleScanCallback);
                 if (service.getUuid().toString().contains(SERVICE_ID)) {
                     bluetoothGattService = service;
                     connectionState = CONNECTED;
@@ -134,11 +138,13 @@ public class SumoBot {
         public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
             super.onCharacteristicWrite(gatt, characteristic, status);
             Log.d(DEBUG_TAG, "onCharacteristicWrite --- status: " + status);
-            if (status == BluetoothGatt.GATT_SUCCESS) {
+            if ((status & BluetoothGatt.GATT_SUCCESS) != 0) {
                 Log.d(DEBUG_TAG, "message was a success");
-            } else if (status == BluetoothGatt.GATT_WRITE_NOT_PERMITTED) {
+            }
+            if ((status & BluetoothGatt.GATT_WRITE_NOT_PERMITTED) != 0) {
                 Log.d(DEBUG_TAG, "write not permitted");
-            } else if (status == BluetoothGatt.GATT_REQUEST_NOT_SUPPORTED) {
+            }
+            if ((status & BluetoothGatt.GATT_REQUEST_NOT_SUPPORTED) != 0) {
                 Log.d(DEBUG_TAG, "gatt request not supported");
             }
 
@@ -154,9 +160,8 @@ public class SumoBot {
     }
 
     private void drive() {
-        Log.d(DEBUG_TAG, "has property write? " + (writeCharacteristic.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE));
-        Log.d(DEBUG_TAG, "has property write no response? " + (writeCharacteristic.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE));
-        Log.d(DEBUG_TAG, "has permissions? " + (writeCharacteristic.getPermissions()));
+        BluetoothGattService service = bluetoothGatt.getService(bluetoothGattService.getUuid());
+        writeCharacteristic = service.getCharacteristic(writeCharacteristic.getUuid());
 
         if (connectionState == CONNECTED && writeCharacteristic != null) {
             ByteBuffer buffer = ByteBuffer.allocate(16);
@@ -167,12 +172,15 @@ public class SumoBot {
             buffer.put(MOTOR_PADDING);
             buffer.put(EMPTY);
             buffer.put(END);
+            buffer = buffer.order(ByteOrder.LITTLE_ENDIAN);
 
             byte[] command = buffer.array();
             writeCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
             writeCharacteristic.setValue(command);
             if (!bluetoothGatt.writeCharacteristic(writeCharacteristic)) {
                 Log.e(DEBUG_TAG, "write was not issued correctly");
+            } else {
+                Log.e(DEBUG_TAG, "wrote: " + bytesToHex(command));
             }
             driveHandler.postDelayed(driveRunable, 100);
         }
