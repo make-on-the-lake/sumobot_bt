@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.util.Log;
 
 import java.nio.ByteBuffer/**/;
+import java.nio.ByteOrder;
 
 public class SumoBot {
     private final static String DEBUG_TAG = SumoBot.class.getName();
@@ -160,19 +161,37 @@ public class SumoBot {
 
         if (connectionState == CONNECTED && writeCharacteristic != null) {
             ByteBuffer buffer = ByteBuffer.allocate(16);
-            buffer.put(START);
-            buffer.put(MOTOR_ID);
-            buffer.putInt(512);
-            buffer.putInt(1024);
-            buffer.put(MOTOR_PADDING);
-            buffer.put(EMPTY);
-            buffer.put(END);
+            buffer.put((byte)0xAB);
+            buffer.put((byte)0x01);
+
+            ByteBuffer leftBuffer = ByteBuffer.allocate(4);
+            leftBuffer.order(ByteOrder.LITTLE_ENDIAN);
+            leftBuffer.putInt(1024);
+            buffer.put(leftBuffer.array());
+
+            ByteBuffer rightBuffer = ByteBuffer.allocate(4);
+            rightBuffer.order(ByteOrder.LITTLE_ENDIAN);
+            rightBuffer.putInt(512);
+            buffer.put(rightBuffer.array());
+
+            buffer.put(new byte[]{0x00, 0x00, 0x00, 0x00});
+            buffer.put((byte)0x00);
+            buffer.put((byte)0xEF);
 
             byte[] command = buffer.array();
+
+            String output = "";
+            for(int index = 0; index < command.length; index++) {
+                output += Integer.toHexString(command[index]);
+                output += " ";
+            }
+            Log.e(DEBUG_TAG, output);
             writeCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
             writeCharacteristic.setValue(command);
             if (!bluetoothGatt.writeCharacteristic(writeCharacteristic)) {
                 Log.e(DEBUG_TAG, "write was not issued correctly");
+            }else{
+                Log.e(DEBUG_TAG, "write!");
             }
             driveHandler.postDelayed(driveRunable, 100);
         }
