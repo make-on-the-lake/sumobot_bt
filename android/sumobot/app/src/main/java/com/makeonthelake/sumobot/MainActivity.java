@@ -80,6 +80,7 @@ public class MainActivity extends Activity implements SumoBotConnectionListener 
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+        sumoBot = new SumoBot(getApplicationContext(), BluetoothAdapter.getDefaultAdapter(), this);
         botNameView = (TextView) findViewById(R.id.sumo_bot_name);
         runState = findViewById(R.id.run_state);
         configureState = findViewById(R.id.configure_state);
@@ -89,6 +90,12 @@ public class MainActivity extends Activity implements SumoBotConnectionListener 
         settingsButton = findViewById(R.id.settings);
         settingsButton.setOnClickListener(new SettingsButtonOnClickListener());
         blutoothButton = findViewById(R.id.bluetooth);
+        findViewById(R.id.gpio_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sumoBot.gpioPressed();
+            }
+        });
         leftLateralView = (LateralView) findViewById(R.id.left_lateral);
         leftLateralView.setOnLaterViewChangeListener(new OnLaterViewChangeListener() {
             @Override
@@ -132,7 +139,6 @@ public class MainActivity extends Activity implements SumoBotConnectionListener 
 
         });
         connectionStatusView = (TextView) findViewById(R.id.connection_status);
-        sumoBot = new SumoBot(getApplicationContext(), BluetoothAdapter.getDefaultAdapter(), this);
         setupEditBotNameEditor();
     }
 

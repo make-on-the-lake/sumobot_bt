@@ -37,8 +37,8 @@ public class SumoBot {
     private static final byte START = (byte) 0xAB;
     private static final byte MOTOR_ID = (byte) 0x01;
     private static final byte BUTTON_ID = (byte) 0x02;
-    private static final byte MOTOR_PADDING[] = {0x00, 0x00, 0x00};
-    private static final byte BUTTON_PADDING[] = {(byte) 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+    private static final byte MOTOR_PADDING[] = new byte[]{0x00, 0x00, 0x00};
+    private static final byte BUTTON_PADDING[] = new byte[]{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
     private static final byte EMPTY = (byte) 0x00;
     private static final byte END = (byte) 0xEF;
 
@@ -63,7 +63,7 @@ public class SumoBot {
         }
     };
 
-    BluetoothGattCallback  bluetoothCallback = new BluetoothGattCallback() {
+    BluetoothGattCallback bluetoothCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
             super.onConnectionStateChange(gatt, status, newState);
@@ -256,6 +256,36 @@ public class SumoBot {
         }
     }
 
+    public void gpioPressed() {
+        BluetoothGattService service = bluetoothGatt.getService(bluetoothGattService.getUuid());
+        writeCharacteristic = service.getCharacteristic(writeCharacteristic.getUuid());
+
+
+        if (connected() && writeCharacteristic != null) {
+            byte[] command = ByteBuffer.allocate(16)
+                    .put(START)
+                    .put(BUTTON_ID)
+                    .put(BUTTON_PADDING)
+                    .put(EMPTY)
+                    .put(END)
+                    .array();
+
+            String output = "";
+            for (int index = 0; index < command.length; index++) {
+                output += Integer.toHexString(command[index]);
+                output += " ";
+            }
+            Log.e(DEBUG_TAG, output);
+            writeCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
+            writeCharacteristic.setValue(command);
+            if (!bluetoothGatt.writeCharacteristic(writeCharacteristic)) {
+                Log.e(DEBUG_TAG, "write was not issued correctly");
+            } else {
+                Log.e(DEBUG_TAG, "write!");
+            }
+        }
+    }
+
     private void pairWithSumoBot(BluetoothDevice device) {
         Log.d(DEBUG_TAG, "Pair with sumoBot");
         this.device = device;
@@ -282,6 +312,5 @@ public class SumoBot {
             bluetoothAdapter.stopLeScan(btleScanCallback);
         }
     }
-
 
 }
