@@ -25,6 +25,7 @@ public class LateralView extends View {
     private int SLIDER_HEIGHT = 175;
     private int SLIDER_WIDTH = 308;
 
+    private OnLaterViewChangeListener changeListener;
     private Drawable trackDrawable;
     private Drawable controlDrawable;
     private int paddingLeft;
@@ -33,6 +34,7 @@ public class LateralView extends View {
     private int paddingBottom;
     private int contentWidth;
     private int contentHeight;
+    private Rect trackLocation;
     private Rect sliderDockedLocation;
     private Rect sliderMoveLocation = new Rect();
     private int state = IDLE;
@@ -100,6 +102,7 @@ public class LateralView extends View {
 
         trackStartX = (getWidth() / 2) - (TRACK_WIDTH / 2);
         trackStartY = (getHeight() / 2) - (TRACK_HEIGHT / 2);
+        trackLocation = new Rect(trackStartX - TRACK_WIDTH / 2, trackStartY, trackStartX + TRACK_WIDTH / 2, trackStartY + TRACK_HEIGHT);
     }
 
     @Override
@@ -118,14 +121,14 @@ public class LateralView extends View {
         int screenY = (int) event.getRawY();
         int[] location = new int[2];
         getLocationOnScreen(location);
-        int x  = screenX - location[0];
-        int y  = screenY - location[1];
+        int x = screenX - location[0];
+        int y = screenY - location[1];
 
 
         switch (action) {
             case (MotionEvent.ACTION_DOWN):
                 Log.d(DEBUG_TAG, "Action was DOWN");
-                sliderMoveLocation = new Rect(x, y, x+15, y+20);
+                sliderMoveLocation = new Rect(x, y, x + 15, y + 20);
                 lastTouchY = y;
 
                 Log.d(DEBUG_TAG, "Hit:  " + Rect.intersects(sliderDockedLocation, sliderMoveLocation));
@@ -139,15 +142,28 @@ public class LateralView extends View {
                     return false;
 
                 int distanceMovedY = y - lastTouchY;
-                Log.d(DEBUG_TAG, "Action was MOVE, traveled: " + distanceMovedY);
                 sliderMoveLocation.offset(0, distanceMovedY);
 
-                if (sliderMoveLocation.exactCenterY() <= trackStartY) {
+                if (sliderMoveLocation.exactCenterY() <= trackStartY -1) {
                     sliderMoveLocation.offset(0, -distanceMovedY);
-                } else if (sliderMoveLocation.exactCenterY() >= trackStartY + TRACK_HEIGHT) {
+                } else if (sliderMoveLocation.exactCenterY() >= trackStartY + TRACK_HEIGHT + 1) {
                     sliderMoveLocation.offset(0, -distanceMovedY);
                 }
 
+
+                int change;
+                int trackSectionHeight = TRACK_HEIGHT / 2;
+
+                if (sliderMoveLocation.exactCenterY() < trackLocation.exactCenterY()) {
+                    int normalizedCenter = sliderMoveLocation.centerY() - trackLocation.top;
+                    change = (int) Math.min(100 - (((float) normalizedCenter / trackSectionHeight) * 100), 100);
+                    changeListener.onMoveForward(change);
+                } else if (sliderMoveLocation.exactCenterY() > trackLocation.exactCenterY()) {
+                    int normalizedCenter = sliderMoveLocation.centerY() - trackLocation.centerY();
+                    change = (int) Math.min((float) normalizedCenter / trackSectionHeight * 100, 100);
+                    changeListener.onMoveBackward(change);
+
+                }
 
                 lastTouchY = y;
                 invalidate();
@@ -156,6 +172,7 @@ public class LateralView extends View {
             case (MotionEvent.ACTION_UP):
                 Log.d(DEBUG_TAG, "Action was UP");
                 state = IDLE;
+                changeListener.onMoveStop();
                 invalidate();
                 return true;
             case (MotionEvent.ACTION_CANCEL):
@@ -169,6 +186,10 @@ public class LateralView extends View {
             default:
                 return super.onTouchEvent(event);
         }
+    }
+
+    public void setOnLaterViewChangeListener(OnLaterViewChangeListener changeListener) {
+        this.changeListener = changeListener;
     }
 
     private void drawSlider(Canvas canvas) {

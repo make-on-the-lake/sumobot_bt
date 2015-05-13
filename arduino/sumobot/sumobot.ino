@@ -46,7 +46,6 @@ void setup() {
 
 void processMessage(const char *command) {
   char commandType = command[1];
-  
   if(commandType == COMMAND_MOTOR_SPEED) {
     processMotorSpeedMessage(command);
   } else if(commandType == COMMAND_GPIO) {
@@ -106,11 +105,14 @@ void loop () {
 
   while (softSerial.available() > 0) {
     ch = softSerial.read();
+    Serial.print(ch, HEX);
 
     if (ch == END_CODE) {
       commandBuffer[bufferPos] = 0;
+      Serial.print("\n");
       processMessage(commandBuffer);
       bufferPos = 0;
+      Serial.print("\n");
     } else if (bufferPos < (BUFSIZE - 1)) {
       commandBuffer[bufferPos] = ch;
       bufferPos++;

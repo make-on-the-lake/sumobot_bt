@@ -5,8 +5,6 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
-import android.bluetooth.BluetoothGattDescriptor;
-import android.bluetooth.BluetoothGattServer;
 import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothProfile;
 import android.content.Context;
@@ -16,39 +14,17 @@ import android.util.Log;
 import java.nio.ByteBuffer/**/;
 import java.nio.ByteOrder;
 
+import static java.lang.Math.ceil;
+import static java.lang.Math.floor;
+import static java.lang.Math.max;
+import static java.lang.Math.min;
+
 public class SumoBot {
     private final static String DEBUG_TAG = SumoBot.class.getName();
 
-
-    public static byte[] hexStringToByteArray(String hexString) {
-        if (hexString.startsWith("0x")) {
-            hexString = hexString.replaceFirst("0x", "");
-        }
-        String[] bites = hexString.split("0x");
-        byte[] data = new byte[bites.length];
-        for (int i = 0; i < data.length; i++) {
-            if (!bites[i].isEmpty()) {
-                data[i] = (byte) (Integer.parseInt(bites[i].toLowerCase(), 16) & 0xff);
-            }
-        }
-        return data;
-    }
-
-    final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
-
-    public static String bytesToHex(byte[] bytes) {
-        char[] hexChars = new char[bytes.length * 2];
-
-        for (int j = 0; j < bytes.length; j++) {
-
-            int v = bytes[j] & 0xFF;
-            hexChars[j * 2] = hexArray[v >>> 4];
-            hexChars[j * 2 + 1] = hexArray[v & 0x0F];
-        }
-        return new String(hexChars);
-    }
-
     public final static int SCAN_PERIOD = 10000;
+
+    public final static int IDLE_SPEED = 512;
 
     public final static int DISCONNECTED = 1000;
     public final static int CONNECTED = 1001;
@@ -58,13 +34,13 @@ public class SumoBot {
     private static final String SERVICE_ID = "ffe0";
     private static final String WRITE_ID = "ffe1";
 
-    private static final byte START[] = hexStringToByteArray("0xAB");
-    private static final byte MOTOR_ID[] = hexStringToByteArray("0x01");
-    private static final byte BUTTON_ID[] = hexStringToByteArray("0x02");
-    private static final byte MOTOR_PADDING[] = hexStringToByteArray("0x000x000x000x00");
+    private static final byte START = (byte) 0xAB;
+    private static final byte MOTOR_ID = (byte) 0x01;
+    private static final byte BUTTON_ID = (byte) 0x02;
+    private static final byte MOTOR_PADDING[] = {0x00, 0x00, 0x00};
     private static final byte BUTTON_PADDING[] = {(byte) 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-    private static final byte EMPTY[] = hexStringToByteArray("0x00");
-    private static final byte END[] = hexStringToByteArray("0xEF");
+    private static final byte EMPTY = (byte) 0x00;
+    private static final byte END = (byte) 0xEF;
 
     Handler connectionHandler = new Handler();
     Handler driveHandler = new Handler();
@@ -77,6 +53,8 @@ public class SumoBot {
     SumoBotConnectionListener sumoBotConnectionListener;
     BluetoothDevice device;
     Context context;
+    int leftSpeed = 512;
+    int rightSpeed = 512;
 
     Runnable driveRunable = new Runnable() {
         @Override
@@ -165,22 +143,37 @@ public class SumoBot {
 
         if (connectionState == CONNECTED && writeCharacteristic != null) {
             ByteBuffer buffer = ByteBuffer.allocate(16);
-            buffer.put(START);
-            buffer.put(MOTOR_ID);
-            buffer.putInt(512);
-            buffer.putInt(1024);
-            buffer.put(MOTOR_PADDING);
-            buffer.put(EMPTY);
-            buffer.put(END);
-            buffer = buffer.order(ByteOrder.LITTLE_ENDIAN);
+            buffer.put((byte) 0xAB);
+            buffer.put((byte) 0x01);
+
+            ByteBuffer leftBuffer = ByteBuffer.allocate(4);
+            leftBuffer.order(ByteOrder.LITTLE_ENDIAN);
+            leftBuffer.putInt(leftSpeed);
+            buffer.put(leftBuffer.array());
+
+            ByteBuffer rightBuffer = ByteBuffer.allocate(4);
+            rightBuffer.order(ByteOrder.LITTLE_ENDIAN);
+            rightBuffer.putInt(rightSpeed);
+            buffer.put(rightBuffer.array());
+
+            buffer.put(new byte[]{0x00, 0x00, 0x00, 0x00});
+            buffer.put((byte) 0x00);
+            buffer.put((byte) 0xEF);
 
             byte[] command = buffer.array();
+
+            String output = "";
+            for (int index = 0; index < command.length; index++) {
+                output += Integer.toHexString(command[index]);
+                output += " ";
+            }
+            Log.e(DEBUG_TAG, output);
             writeCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
             writeCharacteristic.setValue(command);
             if (!bluetoothGatt.writeCharacteristic(writeCharacteristic)) {
                 Log.e(DEBUG_TAG, "write was not issued correctly");
             } else {
-                Log.e(DEBUG_TAG, "wrote: " + bytesToHex(command));
+                Log.e(DEBUG_TAG, "write!");
             }
             driveHandler.postDelayed(driveRunable, 100);
         }
@@ -210,6 +203,40 @@ public class SumoBot {
 
     public boolean connected() {
         return connectionState == CONNECTED;
+    }
+
+    public void moveRightWheelForward(int percentage) {
+        int speed = (int) ceil((((float) percentage) / 100) * IDLE_SPEED);
+        Log.d(DEBUG_TAG, "speed: " + speed);
+        rightSpeed = max(IDLE_SPEED - speed, 0);
+        Log.d(DEBUG_TAG, "right speed: " + rightSpeed);
+    }
+
+    public void moveLeftWheelForward(int percentage) {
+        int speed = (int) ceil((((float) percentage) / 100) * IDLE_SPEED);
+        Log.d(DEBUG_TAG, "speed: " + speed);
+        leftSpeed = max(IDLE_SPEED - speed, 0);
+        Log.d(DEBUG_TAG, "left speed: " + leftSpeed);
+    }
+
+    public void moveRightWheelBackward(int percentage) {
+        int speed = (int) ceil((((float) percentage) / 100) * IDLE_SPEED);
+        rightSpeed = min(IDLE_SPEED + speed, IDLE_SPEED * 2);
+        Log.d(DEBUG_TAG, "right speed: " + rightSpeed);
+    }
+
+    public void moveLeftWheelBackward(int percentage) {
+        int speed = (int) ceil((((float) percentage) / 100) * IDLE_SPEED);
+        leftSpeed = min(IDLE_SPEED + speed, IDLE_SPEED * 2);
+        Log.d(DEBUG_TAG, "left speed: " + leftSpeed);
+    }
+
+    public void stopLeftWheel() {
+        leftSpeed = IDLE_SPEED;
+    }
+
+    public void stopRightWheel() {
+        rightSpeed = IDLE_SPEED;
     }
 
     public void connect() {

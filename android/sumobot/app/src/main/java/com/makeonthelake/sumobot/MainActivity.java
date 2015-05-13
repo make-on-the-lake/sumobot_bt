@@ -21,6 +21,8 @@ public class MainActivity extends Activity implements SumoBotConnectionListener 
     private static final String PREF_KEY = "SUMO_BOT_PREFS";
     private static final int REQUEST_ENABLE_BT = 10001;
 
+    LateralView leftLateralView;
+    LateralView rightLateralView;
     TextView botNameView;
     TextView connectionStatusView;
     View runState;
@@ -87,6 +89,48 @@ public class MainActivity extends Activity implements SumoBotConnectionListener 
         settingsButton = findViewById(R.id.settings);
         settingsButton.setOnClickListener(new SettingsButtonOnClickListener());
         blutoothButton = findViewById(R.id.bluetooth);
+        leftLateralView = (LateralView) findViewById(R.id.left_lateral);
+        leftLateralView.setOnLaterViewChangeListener(new OnLaterViewChangeListener() {
+            @Override
+            public void onMoveForward(int percentage) {
+                Log.d(DEBUG_TAG, "left wheel changed moving forward: " + percentage);
+                sumoBot.moveLeftWheelForward(percentage);
+            }
+
+            @Override
+            public void onMoveBackward(int percentage) {
+                Log.d(DEBUG_TAG, "left wheel changed moving backward: " + percentage);
+                sumoBot.moveLeftWheelBackward(percentage);
+            }
+
+            @Override
+            public void onMoveStop() {
+                Log.d(DEBUG_TAG, "left wheel stopped moving");
+                sumoBot.stopLeftWheel();
+            }
+        });
+
+        rightLateralView = (LateralView) findViewById(R.id.right_lateral);
+        rightLateralView.setOnLaterViewChangeListener(new OnLaterViewChangeListener() {
+            @Override
+            public void onMoveForward(int percentage) {
+                Log.d(DEBUG_TAG, "right wheel changed moving forward: " + percentage);
+                sumoBot.moveRightWheelForward(percentage);
+            }
+
+            @Override
+            public void onMoveBackward(int percentage) {
+                Log.d(DEBUG_TAG, "right wheel changed moving backward: " + percentage);
+                sumoBot.moveRightWheelBackward(percentage);
+            }
+
+            @Override
+            public void onMoveStop() {
+                Log.d(DEBUG_TAG, "right wheel stopped moving");
+                sumoBot.stopRightWheel();
+            }
+
+        });
         connectionStatusView = (TextView) findViewById(R.id.connection_status);
         sumoBot = new SumoBot(getApplicationContext(), BluetoothAdapter.getDefaultAdapter(), this);
         setupEditBotNameEditor();
