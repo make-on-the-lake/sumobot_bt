@@ -63,9 +63,7 @@ public class SumoBot {
         }
     };
 
-    BluetoothGattCallback
-
-            bluetoothCallback = new BluetoothGattCallback() {
+    BluetoothGattCallback  bluetoothCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
             super.onConnectionStateChange(gatt, status, newState);
@@ -75,7 +73,7 @@ public class SumoBot {
                 setupConnection(gatt);
             } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
                 connectionState = DISCONNECTED;
-                Log.i(DEBUG_TAG, "Disconnected from GATT server.");
+                Log.e(DEBUG_TAG, "-------------------------Disconnected from GATT server.");
                 sumoBotConnectionListener.onSumoBotDisconnected();
             }
         }
@@ -141,7 +139,8 @@ public class SumoBot {
         BluetoothGattService service = bluetoothGatt.getService(bluetoothGattService.getUuid());
         writeCharacteristic = service.getCharacteristic(writeCharacteristic.getUuid());
 
-        if (connectionState == CONNECTED && writeCharacteristic != null) {
+
+        if (connected() && writeCharacteristic != null) {
             ByteBuffer buffer = ByteBuffer.allocate(16);
             buffer.put((byte) 0xAB);
             buffer.put((byte) 0x01);
@@ -176,6 +175,8 @@ public class SumoBot {
                 Log.e(DEBUG_TAG, "write!");
             }
             driveHandler.postDelayed(driveRunable, 100);
+        } else {
+            bluetoothGatt = device.connectGatt(context, true, bluetoothCallback);
         }
     }
 
@@ -243,8 +244,9 @@ public class SumoBot {
         if (!bluetoothAdapter.isEnabled()) {
             sumoBotConnectionListener.onSumoBotRequestsBluetoothEnabled();
         } else {
-            if (connectionState != DISCONNECTED || connectionState != SCANNING)
+            if (connectionState != DISCONNECTED || connectionState != SCANNING) {
                 scanForSumobot(true);
+            }
         }
     }
 
