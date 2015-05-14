@@ -151,8 +151,8 @@ public class MainActivity extends Activity implements SumoBotConnectionListener 
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onPause() {
+        super.onPause();
         if (sumoBot.connected()) {
             sumoBot.disConnect();
         }
