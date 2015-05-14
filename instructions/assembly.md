@@ -34,8 +34,8 @@ The top and bottom have arrows which should both be pointing towards the plow:
 
 Place wood glue where the sides meet once assembled. Hold the parts together with two rubber bands, like so:
 
-![](images/glue_chassis.jpg)
-![](images/glue_chassis_2.jpg)
+![](images/chassis_glued.jpg)
+![](images/chassis_glued_2.jpg)
 
 Be careful not to get wood glue on the bands as you'll use them for tires later.
 This will take about 30 mintues to dry, or until clear. Set aside for later.
