@@ -113,6 +113,11 @@ public class LateralView extends View {
         drawSlider(canvas);
     }
 
+    @Override
+    protected void onSizeChanged(int width, int height, int oldwidth, int oldheight) {
+        super.onSizeChanged(width, height, oldwidth, oldheight);
+        invalidate();
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
