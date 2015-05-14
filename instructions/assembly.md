@@ -33,8 +33,9 @@ The top and bottom have arrows which should both be pointing towards the plow:
 <img>
 
 Place wood glue where the sides meet once assembled. Hold the parts together with two rubber bands, like so:
-![](/images/glue_chassis.jpg)
-![](/images/glue_chassis_2.jpg)
+
+![](images/glue_chassis.jpg)
+![](images/glue_chassis_2.jpg)
 
 Be careful not to get wood glue on the bands as you'll use them for tires later.
 This will take about 30 mintues to dry, or until clear. Set aside for later.
@@ -65,7 +66,8 @@ An image for easier reference:
 ###Servo Horns
 
 Prepare the servo horns. You have a couple but by default the wheels are cut for these:
-![](/images/default_servo_horn.jpg)
+
+![](images/default_servo_horn.jpg)
 
 Orient the servo horn so that it is on the *unfinished* side of the wheel with the mounting hole facing out:
 <img>
