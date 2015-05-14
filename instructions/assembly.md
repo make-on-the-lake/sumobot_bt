@@ -4,17 +4,19 @@
 
 * Arduino UNO compatible board
 * Arduino prototyping shield
-* Bluetooth LE module
 * Breadboard
-* 2x Continuous Rotation Servos
+* Bluetooth LE module (HM-10)
+* 2x Continuous Rotation Servos (PowerHD AR-3606HB)
 * 3d-printed ball caster
-* Metal ball bearing
+* Metal ball bearing 5/8"
 * 4xAA Battery Holder
 * 4xAA Batteries
 * 9v Battery Holder
 * 9v Battery
-* Screws
-* Rubber bands
+* Screws 
+  * 4x 3/8" #4 wood screws
+  * 3x 1/2" #4 wood screws
+* 4x Rubber bands (Size 64)
 * Laser-cut chassis and wheels
 * Breadboarding wire
 
@@ -31,7 +33,8 @@ The top and bottom have arrows which should both be pointing towards the plow:
 <img>
 
 Place wood glue where the sides meet once assembled. Hold the parts together with two rubber bands, like so:
-<img>
+![](/images/glue_chassis.jpg)
+![](/images/glue_chassis_2.jpg)
 
 Be careful not to get wood glue on the bands as you'll use them for tires later.
 This will take about 30 mintues to dry, or until clear. Set aside for later.
@@ -62,7 +65,7 @@ An image for easier reference:
 ###Servo Horns
 
 Prepare the servo horns. You have a couple but by default the wheels are cut for these:
-<img>
+![](/images/default_servo_horn.jpg)
 
 Orient the servo horn so that it is on the *unfinished* side of the wheel with the mounting hole facing out:
 <img>
